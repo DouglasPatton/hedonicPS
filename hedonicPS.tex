@@ -153,11 +153,112 @@ Improved environmental quality can lead to gentrification, displacing lower inco
 
 
 \section{Methods}
+\subsection{Long Run Dynamics}
 A firm purchases a house at time $t$ for $P_t$ borrowed at interest rate $r$. Later, at $t+1$, the firm sells the
-house for $P_t+1$ and repays the loan plus interest, (1 + 𝑟)𝑃𝑡
-. After purchasing the house, the firm rents
-out the unit of housing for, 𝑅𝑡 and pays costs 𝐶𝑡
-.
+house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$. After purchasing the house, the firm rents
+out the unit of housing for, $R_t$ and pays costs $C_t$. The present value of the producer’s profit (assuming no fixed costs) will be,
+\begin{equation}
+	\pi_t = (R_t-C_t)+\left(\frac{P_{t+1}}{1+r}-\frac{P_t(1+r)}{1+r}\right).\label{pi1}
+\end{equation}
+Where the first term is the net revenue from rent and costs for the time period and the second term
+represents the present value of house price returns and the principle plus the interest payment on $P_t$.
+Over the same time period, a household rents the house for $R_t$ and has a willingness to pay $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y)$ for that housing unit. We can assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ and that $\mathit{WTP}_t \geq R_t$. One might estimate this function using the hedonic price method and time series rent data, though as we will show this is not necessary. 
+At the end of the time period, the consumer’s monetized benefit is:
+\begin{equation*}
+	 w_t=\mathit{WTP}_t-R_t
+\end{equation*}
+Here we can see that optimization will result in a first order condition that reveals marginal willingness
+to pay for a single point on the household’s demand curve for housing in time period, $t$,
+\begin{equation}
+	\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} \label{foc}
+\end{equation}
+Returning to  	the firm, if we assume the market uses information to price houses efficiently, today’s price will equals tomorrow’s
+price,
+\begin{equation*}
+	P_t=P_{t+1}.
+\end{equation*}
+Future work might consider relaxing this assumption by incorporating the impacts of a stochastic
+specification and including short run macroeconomic effects.
+We can rewrite the profit equation in \ref{pi1} as,
+\begin{equation}
+	\pi_t=(R_t-C_t)-P_t*\frac{r}{1+r}.\label{pi1.1}
+\end{equation}
+Further, if we assume $\pi_t=0$ and rearrange to solve for the equilibrium rent,
+\begin{equation}
+	R_t=C_t+P_t*\frac{r}{1+r}.\label{rent1}
+\end{equation}
+Which says that over a time period rent is equal to costs during the time period plus the present value of
+the interest payment on the cost of the house as capital. If rent were lower than this value, profits
+would be negative, firms would exit, house prices would fall, and the interest payments and other costs
+would decline until profits were no longer negative.
+For each housing unit we can characterize the total welfare, $W_t$ associated with owning and renting the house for a time period,
+\begin{eqnarray*}
+	W_t & = & w_t+\pi_t,\\
+	& = & \mathit{WTP}_t-R_t+0.
+\end{eqnarray*}
+\subsection{Assessing a Shock}
+We define a treatment that happens at the end of $t_0$ that causes $q$ to increase uniformly such that $\Delta q_t=q'_t-q_t>0$ for $t>0$.
+For consumers the alternate welfare measure based on willingness to pay for the higher amenity level,$\mathit{WTP}(q'_t,z_t,y)=\mathit{WTP'}_t$, and an adjusted equilibrium rent, $R'_t=R(q'_t,z_t,P'_t,C'_t)$ is,
+\begin{equation*}
+	w'_t=\mathit{WTP'}_t-R'_t \text{ for } t>0
+\end{equation*}
+The difference between the treated and untreated states for the consumer is,
+\begin{eqnarray}
+	\Delta w_t&=&w'_t-w_t=WTP'_t-WTP_t-(R'_t-R_t)\\
+	&=&\Delta\mathit{WTP}_t-\Delta R_t
+\end{eqnarray}
+For the producer’s alternative profit in the treated state of reality we write,
+\begin{equation*}
+	\pi'_t = (R'_t-C'_t)+\left(\frac{P'_{t+1}}{1+r}-\frac{P'_t(1+r)}{1+r}\right)\text{ for } t>0.
+\end{equation*}
+which can be simplified in the manner of \ref{pi1.1} by assuming competition returns profits to zero and markets function efficiently,
+\begin{equation}
+\pi'_t = (R'_t-C'_t)-P'_t*\frac{r}{1+r}\text{ for } t>0.\label{pi2}
+\end{equation}
+
+The difference between the treated and untreated states for the producer is zero in all subsequent periods due to the effects of competition, but in the period where the treatment occurs,
+\begin{equation}
+	\Delta\pi_0=\frac{P'_1-P_0}{1+r}=\frac{\Delta P_1}{1+r}
+\end{equation}
+Now we can calculate the present value of the change in total welfare due to the treatment, $\Delta W_{\mathrm{PV}}$,
+\begin{eqnarray}
+	\Delta W_{\mathrm{PV}}&=&\Delta \pi_0+\sum_{t>0}\Delta w_t\\
+	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta R_t)(1+r)^{-t} \label{deltaW1}
+\end{eqnarray}
+This is an intriguing result that helps refine how we compute the distribution of benefits from public projects that enhance amenities. The house price return, an unexpected profit, enjoyed by the owner is an important component of the change in welfare. This benefit is also immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. This result may seem inconsistent with the usual measure of welfare change, such as in \ref{freeman2014} and \ref{banzhaf2020}, but we can consider the pattern of changing rent that accompanies the change in price to see a more familiar measure. 
+
+While $\Delta\pi_t=0$ for $t>0$, it is still helpful to consider the equation for the change in profits because it can help us understand how rents will change,
+\begin{eqnarray}
+	\Delta \pi_t &=& \Delta R_t-\Delta C_t-\Delta P_t\left(\frac{r}{1+r}\right)=0 \text{ for } t>0\\
+	\Delta R_t &=& \Delta C_t+\Delta P_t \left(\frac{r}{1+r}\right)  \text{ for } t>0
+\end{eqnarray}
+Returning to our measure of welfare change in equation \ref{deltaW1}, we can substitute for $\Delta R_t$ and rearrange,
+\begin{eqnarray}
+	\Delta W_{\mathrm{PV}}&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\left(\Delta C_t+\Delta P_t \left(\frac{r}{1+r}\right)\right))(1+r)^{-t} \nonumber\\
+	%&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta C_t)(1+r)^{-t}-\Delta P_1 \sum_{t>0}  \left(\frac{r}{1+r}\right)(1+r)^{-t}\nonumber\\
+	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta C_t)(1+r)^{-t}-\frac{\Delta P_1}{1+r}\nonumber\\
+	&=&\Delta \mathit{WTP}_{\mathrm{PV}}-\Delta C_{\mathrm{PV}} \label{deltaW2}
+\end{eqnarray}
+Which is the dynamic counterpart to the usual welfare measure. It is important to note that this measure does not convey the imbalanced flow of benefits to the owner and the renter. Indeed, because the public policy that improved the amenity was targeting consumers who would directly benefit, it is a pecuniary externality that competition among renters allows the homeowner to capture a large share of the benefits through rising rent and a rising asset value.
+
+\subsection{Marginal Effects}
+\begin{eqnarray*}
+\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}&=&\sum_{t>0} \frac{\partial \mathit{WTP}_t}{\partial q_t}(1+r)^{-t}\\
+&=&\sum_{t>0} \frac{\partial R_t}{\partial q_t}(1+r)^{-t}\\
+&=&\sum_{t>0} \frac{\partial C_t}{\partial q_t}(1+r)^{-t}+\frac{r}{1+r}\sum_{t>0} \frac{\partial P_t}{\partial q_t}(1+r)^{-t}\\
+\end{eqnarray*}
+Which can be rearranged to help us understand the partial derivative of the price function,
+\begin{equation}
+	\frac{\partial P_1} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}
+\end{equation}
+
+
+
+
+
+
+
+
 
 
 
