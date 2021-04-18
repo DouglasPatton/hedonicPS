@@ -267,6 +267,9 @@ If we consider the willingness to pay function and assume that increases in weal
 	\mathit{WTP}(q'_t,z_t,y(q'_t))&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0\\
 	\mathit{WTP}(q'_t,z_t,y+\Delta P_1*r)&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0\\
 \end{eqnarray}
+
+
+
 Now if we consider a market of only owner-renters
 \begin{eqnarray}
 \Delta w_t&=&w'_t-w_t=WTP'_t-WTP_t-(R'_t-R_t)\\
@@ -293,8 +296,22 @@ allowing us to write,
 	%
 	\frac{\partial P_t}{\partial q_t}*\left(\frac{r}{1+r}-\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r\right)=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}	-\frac{\partial C_t}{\partial q_t}
 \end{eqnarray}
+we can return to \ref{pvmwtpOwner} and also assume $\partial \mathit{WTP}/\partial y_t=\lambda$, where $\lambda$ is constant over time and write
+\begin{eqnarray}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} = \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +\label{wtpowner1}\\
+	 \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}(1+r^{-t})\\
+	=\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \lambda*\frac{\partial P_1}{\partial q_{t>0}}
+\end{eqnarray}
+additionally, the first term in the right hand side of \ref{wtpowner1} describes the renter's experience in the rental marketplace, so we can substitute marginal rent and then use the rent equation \ref{rent1},
 
-
+\begin{eqnarray}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{\partial P_1} {\partial q_{t>0}}+ \lambda*\frac{\partial P_1}{\partial q_{t>0}}
+\end{eqnarray}
+which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
+\begin{equation}
+	\frac{\partial P_1} {\partial q_{t>0}}=\left(
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)/(1+\lambda)
+\end{equation}
 
 \section{Discussion})
 Extending the work of \cite{kanemoto} to distinguish between owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
