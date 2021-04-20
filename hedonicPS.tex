@@ -164,6 +164,7 @@ out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The pres
 \end{equation}
 Where the first term is the net revenue from rent and costs for the time period and the second term
 represents the present value of house price returns and the principle plus the interest payment on $P_t$.
+
 Over the same time period, a household rents the house for $R_t$ and has a willingness to pay $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y)$ for that housing unit. We can assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ and that $\mathit{WTP}_t \geq R_t$. One might estimate this function using the hedonic price method and time series rent data, though as we will show this is not necessary. 
 At the end of the time period, the consumer’s monetized benefit is:
 \begin{equation*}
@@ -253,7 +254,7 @@ We are ultimately interested in understanding the relationship between price cha
 \end{eqnarray}
 Which can be rearranged to help us understand the partial derivative of the price function,
 \begin{equation}
-	\frac{\partial P_1} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}
+	\frac{\partial P_1} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}
 \end{equation}
 If we assume that costs do not change, then we have the standard tangency condition used in the static ownership literature.
 
@@ -265,10 +266,58 @@ If we consider the willingness to pay function and assume that increases in weal
 	%\mathit{WTP}'(q_t,z_t,y)&=&\mathit{WTP'}_t^{\mathit{non-owner}}\\
 	%\mathit{WTP}(q_t,z_t,y)&=&\mathit{WTP}_t^{\mathit{owner}}\\
 	\mathit{WTP}(q'_t,z_t,y(q'_t))&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0\\
-	\mathit{WTP}(q'_t,z_t,y+\Delta P_1*r)&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0\\
+	\mathit{WTP}(q'_t,z_t,y+\Delta P_1*r)&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0
 \end{eqnarray}
 
 
+We can consider the marginal welfare measure for this market of owner-renters,
+
+\begin{equation}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}=\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t}\\ \label{pvmwtpOwner}
+\end{equation}
+
+we can return to \ref{pvmwtpOwner} and also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time and write
+\begin{eqnarray}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} 
+	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +
+	\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \label{mwtpOwner0}\\
+	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +
+	 \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{r}{1+r}*\frac{\partial P_t}{\partial q_t}(1+r^{-t}) \nonumber\\
+	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}} \label{mwtpOwner1}
+\end{eqnarray}
+Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the renter's experience in the rental marketplace (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
+
+\begin{eqnarray}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{\partial P_1} {\partial q_{t>0}}+\frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+\end{eqnarray}
+which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
+\begin{equation}
+	\frac{\partial P_1} {\partial q_{t>0}}=\left(
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
+\end{equation}
+Next we decompose the partial derivative for the owner's $WTP$ using \ref{mwtpOwner1} to show the relative impact on marginal price of homeownership,
+\begin{eqnarray}
+\frac{\partial P_1} {\partial q_{t>0}}&=&\left(
+\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)\\
+&=&\left(
+\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
+-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
++\frac{\lambda}{1+r+\lambda}*\frac{\partial P_1}{\partial q_{t>0}}\\
+&=&\left(\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
+-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)
+\left(\frac{1+r}{1+r+\lambda}\right)^2
+\end{eqnarray}
+
+For the owner-renter When the owner-renter is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to owner-renters. Importantly, because an owner-renter's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise.
+
+Next, we need to connect $\partial \mathit{WTP}_t/\partial y_t$ to the price function...??
+Or can we use data to estimate lambda by modeling the difference in marginal prices for owners and renters?
+
+
+
+
+\subsection{set aside}
 
 Now if we consider a market of only owner-renters
 \begin{eqnarray}
@@ -277,12 +326,8 @@ Now if we consider a market of only owner-renters
 \end{eqnarray}
 
 
-
-\subsection{failed marginal version}
-\begin{equation}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}=\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t}\\ \label{pvmwtpOwner}
-\end{equation}
 If we consider a single year,
+
 \begin{eqnarray*}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}&=&\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}\\
 	%
@@ -292,26 +337,11 @@ If we consider a single year,
 \end{eqnarray*}
 allowing us to write,
 \begin{eqnarray}
-	\frac{\partial C_t}{\partial q_t}+\frac{r}{1+r}\frac{\partial P_t}{\partial q_t}=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}\\
-	%
-	\frac{\partial P_t}{\partial q_t}*\left(\frac{r}{1+r}-\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r\right)=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}	-\frac{\partial C_t}{\partial q_t}
+\frac{\partial C_t}{\partial q_t}+\frac{r}{1+r}\frac{\partial P_t}{\partial q_t}=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}\\
+%
+\frac{\partial P_t}{\partial q_t}*\left(\frac{r}{1+r}-\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r\right)=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}	-\frac{\partial C_t}{\partial q_t}
 \end{eqnarray}
-we can return to \ref{pvmwtpOwner} and also assume $\partial \mathit{WTP}/\partial y_t=\lambda$, where $\lambda$ is constant over time and write
-\begin{eqnarray}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} = \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +\label{wtpowner1}\\
-	 \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}(1+r^{-t})\\
-	=\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \lambda*\frac{\partial P_1}{\partial q_{t>0}}
-\end{eqnarray}
-additionally, the first term in the right hand side of \ref{wtpowner1} describes the renter's experience in the rental marketplace, so we can substitute marginal rent and then use the rent equation \ref{rent1},
 
-\begin{eqnarray}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{\partial P_1} {\partial q_{t>0}}+ \lambda*\frac{\partial P_1}{\partial q_{t>0}}
-\end{eqnarray}
-which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
-\begin{equation}
-	\frac{\partial P_1} {\partial q_{t>0}}=\left(
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)/(1+\lambda)
-\end{equation}
 
 \section{Discussion})
 Extending the work of \cite{kanemoto} to distinguish between owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
