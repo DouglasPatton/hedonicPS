@@ -130,7 +130,7 @@ Zabel and Kiel (2000) discuss measuring the benefits to homeowners and their hou
 
 Bui and Mayer (2003) quantify environmental amenity benefits by assessing their capitalization into housing prices. Bishop and Murphy (2011,2019) estimate dynamic models that include expectations about future prices 
 
-\cite{niskanen77} and \cite{freeman80} develop and extend dynamic hedonic models and extend them to quantify benefits in the presence of taxes.
+\cite{niskanen77} and \cite{freeman80} develop and extend dynamic hedonic models and extend them to quantify benefits in the presence of taxes. Around the same time, \cite{sonstelie80} develop a dynamic approach to hedonic modeling that incorporates interest rates and tax rates and the "user costs" a landlord experiences. None of these works distinguish between the well-being of the occupant and owner of a housing unit.
 
 
 \subsection{External Economies} 
@@ -323,39 +323,50 @@ which can be rearranged to highlight the relationship between marginal willingne
 For the renter-owner When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Pecuniary externalities do not transmit wealth effects into higher rents, and renter-owners enjoy the surplus.
 
 \subsection{Taxes}
-It can be useful to separate taxes out as a component of costs. Assume firms pay a tax each year on $P_t$ equal to $T_t=g*P_t$. We modify the rent equation in \ref{rent1} to separately consider the impact of the tax.,
-\begin{eqnarray*}
-	R_t=C_t+P_t*\frac{r+g}{1+r}
-\end{eqnarray*}
+It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a tax at the end of each year on $P_{t+1}$ equal to $T_t=g*P_t$. We incorporate this into the firm's profit equation from \ref{pi1},
+\begin{equation}
+	\pi^T_t = (R^T_t-C^T_t)+\left(\frac{P^T_{t+1}(1-g)}{1+r}-\frac{P^T_t(1+r)}{1+r}\right).\label{pi1T}
+\end{equation}
+The tax is imposed at the end of $t_0$. Markets subsequently adjust to a new equilibrium with competition returning profits to zero and allowing us to express equilibrum rents as a function of the new tax,
+\begin{equation}
+	R^T_t=C^T_t-\left(\frac{P^T_{t+1}(1-g)}{1+r}-P^T_t\right) \text{ for }T>0
+\end{equation}
+Then efficient use of information and competition cause prices in the next period to equal prices in this period, allowing us to simplify the rental equation,
+\begin{equation}
+R^T_t=C^T_t-\frac{P^T_{t}(g+r)}{1+r}\text{ for }T>0.
+\end{equation}
+Because the tax does not influence decisions made at the margin, we assume rents and costs do not change due to the property tax. 
 
 
-
-
-
-\subsection{set aside}
-
-Now if we consider a market of only renter-owners
+And in year 0 the firm's profits will be non-zero,
+\begin{equation}
+	\pi^T_0 = (R^T_0-C^T_0)+\left(\frac{P^T_{1}(1-g)}{1+r}-P_0\right).\label{piT0}
+\end{equation}
+The consumer does not experience any change due to the property tax. Because of our assumption that rents and costs do not change due to the property tax, we can solve for the change in price due to the tax,
 \begin{eqnarray}
-\Delta w_t&=&w'_t-w_t=WTP'_t-WTP_t-(R'_t-R_t)\\
-&=&\Delta\mathit{WTP}_t-\Delta R_t
+	\Delta^T R_t&=&\Delta^T C_t+P^T_{t}\frac{g+r}{1+r}-P_{t} \frac{r}{1+r},\\
+	0&=&0+P^T_{t}\frac{g+r}{1+r}-P_{t} \frac{r}{1+r},\\
+	P^T_t&=& P_t\frac{r}{g+r}.
+\end{eqnarray}
+Where $\Delta^T$ denotes the difference between the state of reality with the tax and without. As long as g and r are positive, the property tax will cause the price of the house to fall to a new equilibrium level.
+Next we can consider the change in profits during $t=0$ as a function of $g$ and $P_0$,
+\begin{eqnarray}
+	\Delta^T \pi_0 &=& P_1^T\frac{1-g}{1+r}-P_1\frac{1}{1+r}\\
+	&=& P_1\left(\frac{r(1-g)}{(g+r)(1+r)}-\frac{1}{1+r}\right)\\
+	&=&-P_0\frac{g}{g+r}
+\end{eqnarray}
+Where we have relied on equality of prices between the two scenarios in $t=0$ and also that without a tax $P_0=P_1$. The total welfare impact on the firm and household is simply this change in profits in time period zero.
+Given that rents do not change but the interest payment on the price of the house decrease, we can further consider how rents change due to the tax,
+\begin{eqnarray}
+	\Delta^T R_t&=&P^T_t\frac{g+r}{1+r}-P_t\frac{r}{1+r}\\
+	&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}
 \end{eqnarray}
 
 
-If we consider a single year,
 
-\begin{eqnarray*}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}&=&\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}\\
-	%
-	&=& \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}\\
-	&=&\frac{\partial R_t}{\partial q_t}\\
-	&=&\frac{\partial C_t}{\partial q_t}+\frac{r}{1+r}\frac{\partial P_t}{\partial q_t}
-\end{eqnarray*}
-allowing us to write,
-\begin{eqnarray}
-\frac{\partial C_t}{\partial q_t}+\frac{r}{1+r}\frac{\partial P_t}{\partial q_t}=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}+\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r*\frac{\partial P_t}{\partial q_t}\\
-%
-\frac{\partial P_t}{\partial q_t}*\left(\frac{r}{1+r}-\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial y_t}*r\right)=\frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}|_{\partial y=0}	-\frac{\partial C_t}{\partial q_t}
-\end{eqnarray}
+
+
+
 
 
 \section{Discussion})
@@ -372,7 +383,7 @@ It is worth emphasizing that the capitalized values related to housing, e.g., th
 \bibitem[\protect\citeauthoryear{Banzhaf}{2020}]{banzhaf20}
 \textsc{Banzhaf, S.} (2020):
 ``Panel Data Hedonics Rosen’s First Stage as a “Sufficient
-Statistic,''
+Statistic",''
 \textit{International Economic Review}, 61(2), 973--1000.
 \endbibitem
 
@@ -462,14 +473,23 @@ Washington DC, U.S.A.: Routledge
 \textsc{Scitovsky, T.} (1954):
 ``Two concepts of external economies,''
 \textit{Journal of political Economy}, 55, 1--18.
-
 \endbibitem
+
 Palmquist, R.B., 1989. Land as a differentiated factor of production: A hedonic model and its implications for welfare measurement. Land Economics, 65(1), pp.23-28. 
 \bibitem[\protect\citeauthoryear{Aumann}{1987}]{b12}
 \textsc{Aumann, R. J.} (1987):
 ``Correlated Equilibrium as an Expression of Bayesian Rationality,''
 \textit{Econometrica}, 55, 1--18.
 \endbibitem
+
+
+\bibitem[\protect\citeauthoryear{Sonstelie and Portney}{1980}]{sonstelie80}
+\textsc{Sonstelie, J. C., and Portney, P. R.} (1980):
+``Gross rents and market values: testing the implications of Tiebout's hypothesis,''
+\textit{Journal of Urban Economics}, 7(1), 102-118.
+\endbibitem
+
+
 Zilberman, D., Barrows, G., Hochman, G. and Rajagopal, D., 2013. On the indirect effect of biofuel. American Journal of Agricultural Economics, 95(5), pp.1332-1337. 
 \bibitem[\protect\citeauthoryear{Aumann}{1987}]{b13}
 \textsc{Aumann, R. J.} (1987):
