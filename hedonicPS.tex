@@ -130,6 +130,7 @@ Zabel and Kiel (2000) discuss measuring the benefits to homeowners and their hou
 
 Bui and Mayer (2003) quantify environmental amenity benefits by assessing their capitalization into housing prices. Bishop and Murphy (2011,2019) estimate dynamic models that include expectations about future prices 
 
+\cite{niskanen77} and \cite{freeman80} develop and extend dynamic hedonic models and extend them to quantify benefits in the presence of taxes.
 
 
 \subsection{External Economies} 
@@ -154,8 +155,8 @@ Improved environmental quality can lead to gentrification, displacing lower inco
 
 \section{Methods}
 \subsection{Long Run Dynamics}
-In this section, we develop a dynamic model of a firm and a household who can buy/sell and rent a unit of housing that is a bundle of attributes, $z$, and $q$, the attribute of interest which we might imagine is an environmental amenity such as clean air. We assume that the firm and the household trade in competitive markets with perfect knowledge aside from an unexpected shock, discussed below.
-We assume that the firm is profit maximizing and the household or consumer is utility maximizing. The firm and the household make decisions at each time period to buy/sell and to rent. We focus our analysis on a typical housing unit which may be owned by different firms and rented by different households each year. Notably, in empirical applications, market activity for hedonic assets like houses works in this manner and capitalized values related to housing are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices.
+In this section, we develop a dynamic model of a firm and a household who can buy/sell and rent a unit of housing that is a bundle of attributes, $z$, and an additional attribute, $q$, the housing attribute of interest which we might imagine is an environmental amenity such as clean air. We assume that the firm and the household trade in competitive markets with perfect knowledge aside from an unexpected shock, discussed below.
+We assume that the firm is profit maximizing and the household or consumer is utility maximizing. The firm and the household make decisions at each time period to buy/sell and to rent. We focus our analysis on a typical housing unit which may be owned by different firms and rented by different households each year. 
 The household and the firm interact at the beginning of each time period when the household pays rent. The transaction is the result of the household maximizing the present value of their utility. Included in the household's first order conditions would be the  
 The firm purchases a house at time $t$ for $P_t$ borrowed at interest rate $r$. Later, at $t+1$, the firm sells the house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$. After purchasing the house, the firm rents
 out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The present value of the producer’s profit for a single time period (assuming no fixed costs) will be,
@@ -165,7 +166,7 @@ out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The pres
 Where the first term is the net revenue from rent and costs for the time period and the second term
 represents the present value of house price returns and the principle plus the interest payment on $P_t$.
 
-Over the same time period, a household rents the house for $R_t$ and has a willingness to pay $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y)$ for that housing unit. We can assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ and that $\mathit{WTP}_t \geq R_t$. One might estimate this function using the hedonic price method and time series rent data, though as we will show this is not necessary. 
+Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y)$ for that same housing unit. For simplicity, we assume that consumers have identical WTP functions conditional on income and housing attributes. We can assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ and that $\mathit{WTP}_t \geq R_t$. One might estimate this function using the hedonic price method and time series rent data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
 At the end of the time period, the consumer’s monetized benefit is:
 \begin{equation*}
 	 w_t=\mathit{WTP}_t-R_t
@@ -226,7 +227,8 @@ The difference between the treated and untreated states for the producer is zero
 Now we can calculate the present value of the change in total welfare due to the treatment, $\Delta W_{\mathrm{PV}}$,
 \begin{eqnarray}
 	\Delta W_{\mathrm{PV}}&=&\Delta \pi_0+\sum_{t>0}\Delta w_t\nonumber\\
-	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta R_t)(1+r)^{-t} \label{deltaW1}
+	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta R_t)(1+r)^{-t} \label{deltaW1}\\
+	&=&\Delta P_{\mathrm{PV}}+\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}
 \end{eqnarray}
 This is an intriguing result that helps refine how we compute the distribution of benefits from public projects that enhance amenities. The house price return is an unexpected profit, enjoyed by the owner. This benefit is immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. This result may seem inconsistent with the usual measure of welfare change, such as in \cite{freeman14} and \cite{banzhaf20}, but next we consider the pattern of changing rent that accompanies the change in price to derive a more familiar measure. 
 
@@ -258,25 +260,34 @@ Which can be rearranged to help us understand the partial derivative of the pric
 \end{equation}
 If we assume that costs do not change, then we have the standard tangency condition used in the static ownership literature.
 
-\subsection{Owners Who Rent}
-If we consider owners who rent to themselves, we can consider the effects on the market of increased wealth.
-If we consider the willingness to pay function and assume that increases in wealth translate to smooth increases in consumption in perpetuity, then income becomes a function of attriutes of the house, such as q, 
+\subsection{Renters Who Own}
+If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a policy or treatment that increases profits. If we consider the willingness to pay for housing function and assume that increases in wealth translate to smooth increases in consumption in perpetuity, then income becomes a function of attributes of the house, such as q. So we can define WTP for renters who own,
+\begin{eqnarray*}	
+	\mathit{WTP}_t^{\mathit{owner}}&=&\mathit{WTP}(q_t,z_t,y_t(q_t)) \text{ and} \\
+	\mathit{WTP'}_t^{\mathit{owner}}&=&\mathit{WTP}(q'_t,z_t,y(q'_t)) \text{ for } t>0\\
+	&=&	\mathit{WTP}(q'_t,z_t,y+\pi_t*r) \text{ for } t>0
+\end{eqnarray*}
+And the WTP measures in previous measures are implicity for renters who do not own.
+%we can define WTP for renters who do not own, 
+%\begin{eqnarray*}
+%	\mathit{WTP}_t^{\mathit{renter}}&=&\mathit{WTP}(q_t,z_t,y_t)\text{ and}\\
+%	\mathit{WTP'}_t^{\mathit{renter}}&=&\mathit{WTP}(q'_t,z_t,y_t)\text{ for } t>0,\\
+%\end{eqnarray*}	
+
+
+Now we can consider the marginal welfare measure for this market of renter-owners,
+
 \begin{eqnarray}
-	%\mathit{WTP}(q_t,z_t,y)&=&\mathit{WTP}_t^{\mathit{non-owner}}\\
-	%\mathit{WTP}'(q_t,z_t,y)&=&\mathit{WTP'}_t^{\mathit{non-owner}}\\
-	%\mathit{WTP}(q_t,z_t,y)&=&\mathit{WTP}_t^{\mathit{owner}}\\
-	\mathit{WTP}(q'_t,z_t,y(q'_t))&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0\\
-	\mathit{WTP}(q'_t,z_t,y+\Delta P_1*r)&=&\mathit{WTP}_t^{\mathit{owner}} \text{ for } t>0
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}&=&\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t} \nonumber\\
+	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} \nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber\\
+	%&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial q_t}*(1+r)^{-t}\nonumber\\
+	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber
+	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}*(1+r)^{-t}\nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber
 \end{eqnarray}
 
-
-We can consider the marginal welfare measure for this market of owner-renters,
-
-\begin{equation}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}=\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t}\\ \label{pvmwtpOwner}
-\end{equation}
-
-we can return to \ref{pvmwtpOwner} and also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time and write
+Next we can assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time and write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} 
 	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +
@@ -288,38 +299,42 @@ we can return to \ref{pvmwtpOwner} and also assume $\partial \mathit{WTP}_t/\par
 Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the renter's experience in the rental marketplace (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
 
 \begin{eqnarray}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{\partial P_1} {\partial q_{t>0}}+\frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+r+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
 \end{eqnarray}
 which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
 \begin{equation}
 	\frac{\partial P_1} {\partial q_{t>0}}=\left(
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
 \end{equation}
-Next we decompose the partial derivative for the owner's $WTP$ using \ref{mwtpOwner1} to show the relative impact on marginal price of homeownership,
-\begin{eqnarray}
-\frac{\partial P_1} {\partial q_{t>0}}&=&\left(
-\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
--\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)\\
-&=&\left(
-\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
--\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
-+\frac{\lambda}{1+r+\lambda}*\frac{\partial P_1}{\partial q_{t>0}}\\
-&=&\left(\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
--\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)
-\left(\frac{1+r}{1+r+\lambda}\right)^2
-\end{eqnarray}
+%Next we decompose the partial derivative for the owner's $WTP$ using \ref{mwtpOwner1} to show the relative impact on marginal price of homeownership,
+%\begin{eqnarray}
+%\frac{\partial P_1} {\partial q_{t>0}}&=&\left(
+%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)\\
+%&=&\left(
+%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
+%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
+%+\frac{\lambda}{1+r+\lambda}*\frac{\partial P_1}{\partial q_{t>0}}\\
+%&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
+%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}
+% \label{margialPWTP}
+%\end{eqnarray}
 
-For the owner-renter When the owner-renter is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to owner-renters. Importantly, because an owner-renter's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise.
+For the renter-owner When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Pecuniary externalities do not transmit wealth effects into higher rents, and renter-owners enjoy the surplus.
 
-Next, we need to connect $\partial \mathit{WTP}_t/\partial y_t$ to the price function...??
-Or can we use data to estimate lambda by modeling the difference in marginal prices for owners and renters?
+\subsection{Taxes}
+It can be useful to separate taxes out as a component of costs. Assume firms pay a tax each year on $P_t$ equal to $T_t=g*P_t$. We modify the rent equation in \ref{rent1} to separately consider the impact of the tax.,
+\begin{eqnarray*}
+	R_t=C_t+P_t*\frac{r+g}{1+r}
+\end{eqnarray*}
+
 
 
 
 
 \subsection{set aside}
 
-Now if we consider a market of only owner-renters
+Now if we consider a market of only renter-owners
 \begin{eqnarray}
 \Delta w_t&=&w'_t-w_t=WTP'_t-WTP_t-(R'_t-R_t)\\
 &=&\Delta\mathit{WTP}_t-\Delta R_t
@@ -346,7 +361,7 @@ allowing us to write,
 \section{Discussion})
 Extending the work of \cite{kanemoto} to distinguish between owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
 
-
+It is worth emphasizing that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. If 
 
 
 
@@ -358,79 +373,98 @@ Extending the work of \cite{kanemoto} to distinguish between owners and renters 
 \textsc{Banzhaf, S.} (2020):
 ``Panel Data Hedonics Rosen’s First Stage as a “Sufficient
 Statistic,''
-\textit{International Economic Review}, 61(2), 973-1000d.
+\textit{International Economic Review}, 61(2), 973--1000.
 \endbibitem
 
 
 \bibitem[\protect\citeauthoryear{Banzhaf, Ma, and Timmins}{2019}]{banzhafJustice19}
 \textsc{Banzhaf, S., Ma, L. and Timmins, C.} (2019):
 ``Environmental Justice: The Economics of Race, Place, and Pollution,''
-\textit{Journal of Economic Perspectives}, 33(1), 185-208.
+\textit{Journal of Economic Perspectives}, 33(1), 185--208.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Bishop, et al.}{2020}]{bishop20}
 \textsc{Bishop, K.C., Kuminoff, N.V., Banzhaf, H.S., Boyle, K.J., von Gravenitz, K., Pope, J.C., Smith, V.K. and Timmins, C.D., } (2020):
 ``Best practices for using hedonic property value models to measure willingness to pay for environmental quality,''
-\textit{Review of Environmental Economics and Policy}, 14(2), 260-281.
+\textit{Review of Environmental Economics and Policy}, 14(2), 260--281.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Bishop and Murphy}{2011}]{bishop11}
 \textsc{Bishop, K.C. and Murphy, A.D.} (2011):
 ``Estimating the Willingness to Pay to Avoid Violent Crime: A Dynamic Approach,''
-\textit{American Economic Review}, 101(3), 625-629.
+\textit{American Economic Review}, 101(3), 625--629.
 \endbibitem
 
-Bishop, Kelly C., and Alvin D. Murphy. "Valuing time-varying attributes using the hedonic model: when is a dynamic approach necessary?." Review of Economics and Statistics 101, no. 1 (2019): 134-145. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{bishop19}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+\bibitem[\protect\citeauthoryear{Bishop, Kelly, and Murphy}{2019}]{bishop19}
+\textsc{Bishop, Kelly C., and Alvin D. Murphy} (2019):
+``Valuing time-varying attributes using the hedonic model: when is a dynamic approach necessary?,''
+\textit{Review of Economics and Statistics}, 101(1), 134--145.
 \endbibitem
-Buchanan, J.M. and Stubblebine, W.C., 1962. Externality. In Classic papers in natural resource economics (pp. 138-154). Palgrave Macmillan, London. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{bs1962}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+
+\bibitem[\protect\citeauthoryear{Buchanan and Stubblebine}{1962}]{bs1962}
+\textsc{Buchanan, J.M. and Stubblebine, W.C.} (1962):
+``Externality,''
+\textit{Economica}, 29(116), 371-384.
 \endbibitem
-Bui, L.T. and Mayer, C.J., 2003. Regulation and capitalization of environmental amenities: evidence from the toxic release inventory in Massachusetts. Review of Economics and statistics, 85(3), pp.693-708. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{bui87}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+
+\bibitem[\protect\citeauthoryear{Bui and Mayer}{2003}]{bui03}
+\textsc{Bui, L.T. and Mayer, C.J.} (2003):
+``Regulation and capitalization of environmental amenities: evidence from the toxic release inventory in Massachusetts,''
+\textit{Review of Economics and statistics}, 85(3), 693--708.
 \endbibitem
-Dávila, E. and Korinek, A., 2018. Pecuniary externalities in economies with financial frictions. The Review of Economic Studies, 85(1), pp.352-395.,  
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{davila18}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+
+ 
+\bibitem[\protect\citeauthoryear{Dávila and Korinek}{2018}]{davila18}
+\textsc{Dávila, E. and Korinek, A.} (2018):
+``Pecuniary externalities in economies with financial frictions,''
+\textit{The Review of Economic Studies}, 85(1), 352--395.
 \endbibitem
+
+
+\bibitem[\protect\citeauthoryear{Freeman}{1980}]{freeman80}
+\textsc{Freeman, A.M.} (1980):
+``Land Prices Substantially Underestimate the Value of Environmental Quality: A Comment,''
+\textit{The Review of Economics and Statistics}, , 154--156.
+\endbibitem
+
 
 \bibitem[\protect\citeauthoryear{Freeman}{1999}]{freeman99}
-\textsc{Freeman, A.M.} (1987):
+\textsc{Freeman, A.M.} (1999):
 \textit{The Measurement Of Environmental And Resource Values: Theory And Methods}.
 Washington DC, U.S.A.: Resources for the Future.
 \endbibitem
  
 \bibitem[\protect\citeauthoryear{Freeman, Herriges, and Kling}{2014}]{freeman14}
-\textsc{Freeman III, A. Myrick, Joseph A. Herriges, and Catherine L. Kling.} (1987):
+\textsc{Freeman III, A. Myrick, Joseph A. Herriges, and Catherine L. Kling.} (2014):
 \textit{The Measurement Of Environmental And Resource Values: Theory And Methods}.
 Washington DC, U.S.A.: Routledge
 \endbibitem 
 
 
-Holcombe, R.G. and Sobel, R.S., 2001. Public Policy Toward Pecuniary Externalities. Public Finance Review, 29(4), pp.304-325. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{b10}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+, 2001. . , 29(4), pp.304-325. 
+\bibitem[\protect\citeauthoryear{Holcombe and Sobel}{2001}]{holcombe01}
+\textsc{Holcombe, R.G. and Sobel, R.S.} (2001):
+``Public Policy Toward Pecuniary Externalities,''
+\textit{Public Finance Review}, 29(4), 304--325.
 \endbibitem
-Scitovsky, T., 1954. Two concepts of external economies. Journal of political Economy, 62(2), pp.143-151. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{b11}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+
+
+, 1977. . , pp.375-377.
+\bibitem[\protect\citeauthoryear{Niskanen and Hanke}{1977}]{niskanen77}
+\textsc{Niskanen, W.A. and Hanke, S.H.} (1977):
+``Land prices substantially underestimate the value of environmental quality,''
+\textit{The Review of Economics and Statistics}, ??, 375--377.
 \endbibitem
-Palmquist, R.B., 1989. Land as a differentiated factor of production: A hedonic model and its implications for welfare measurement. Land economics, 65(1), pp.23-28. 
+
+
+, 1954. . , 62(2), pp.143-151. 
+\bibitem[\protect\citeauthoryear{Scitovsky}{1954}]{scitovsky54}
+\textsc{Scitovsky, T.} (1954):
+``Two concepts of external economies,''
+\textit{Journal of political Economy}, 55, 1--18.
+
+\endbibitem
+Palmquist, R.B., 1989. Land as a differentiated factor of production: A hedonic model and its implications for welfare measurement. Land Economics, 65(1), pp.23-28. 
 \bibitem[\protect\citeauthoryear{Aumann}{1987}]{b12}
 \textsc{Aumann, R. J.} (1987):
 ``Correlated Equilibrium as an Expression of Bayesian Rationality,''
