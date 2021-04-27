@@ -228,7 +228,7 @@ Now we can calculate the present value of the change in total welfare due to the
 \begin{eqnarray}
 	\Delta W_{\mathrm{PV}}&=&\Delta \pi_0+\sum_{t>0}\Delta w_t\nonumber\\
 	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta R_t)(1+r)^{-t} \label{deltaW1}\\
-	&=&\Delta P_{\mathrm{PV}}+\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}
+	&=&\Delta P_{\mathrm{PV}}+\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}\label{deltaW2}
 \end{eqnarray}
 This is an intriguing result that helps refine how we compute the distribution of benefits from public projects that enhance amenities. The house price return is an unexpected profit, enjoyed by the owner. This benefit is immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. This result may seem inconsistent with the usual measure of welfare change, such as in \cite{freeman14} and \cite{banzhaf20}, but next we consider the pattern of changing rent that accompanies the change in price to derive a more familiar measure. 
 
@@ -261,13 +261,13 @@ Which can be rearranged to help us understand the partial derivative of the pric
 If we assume that costs do not change, then we have the standard tangency condition used in the static ownership literature.
 
 \subsection{Renters Who Own}
-If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a policy or treatment that increases profits. If we consider the willingness to pay for housing function and assume that increases in wealth translate to smooth increases in consumption in perpetuity, then income becomes a function of attributes of the house, such as q. So we can define WTP for renters who own,
+If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a policy or treatment that increases profits. If we consider the willingness to pay for housing function and that increases in wealth translate to smooth increases in consumption in perpetuity (implying the household's marginal propensity to consume (MPC) equals one), then income becomes a function of attributes of the house, such as q. So we can define WTP for renters who own,
 \begin{eqnarray*}	
 	\mathit{WTP}_t^{\mathit{owner}}&=&\mathit{WTP}(q_t,z_t,y_t(q_t)) \text{ and} \\
 	\mathit{WTP'}_t^{\mathit{owner}}&=&\mathit{WTP}(q'_t,z_t,y(q'_t)) \text{ for } t>0\\
 	&=&	\mathit{WTP}(q'_t,z_t,y+\pi_t*r) \text{ for } t>0
 \end{eqnarray*}
-And the WTP measures in previous measures are implicity for renters who do not own.
+Notably, this implies that the previous WTP measures are implicitly for renters who do not own a house.
 %we can define WTP for renters who do not own, 
 %\begin{eqnarray*}
 %	\mathit{WTP}_t^{\mathit{renter}}&=&\mathit{WTP}(q_t,z_t,y_t)\text{ and}\\
@@ -320,20 +320,20 @@ which can be rearranged to highlight the relationship between marginal willingne
 % \label{margialPWTP}
 %\end{eqnarray}
 
-For the renter-owner When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Pecuniary externalities do not transmit wealth effects into higher rents, and renter-owners enjoy the surplus.
+When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Given our assumption of an MPC equal to one, pecuniary externalities do not transmit wealth effects into higher rents. To the extent that households do accumulate wealth, we expect wealth effects to drive up rent and house prices, particularly in locations where renter-owners tend to live.
 
 \subsection{Taxes}
 It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a tax at the end of each year on $P_{t+1}$ equal to $T_t=g*P_t$. We incorporate this into the firm's profit equation from \ref{pi1},
 \begin{equation}
 	\pi^T_t = (R^T_t-C^T_t)+\left(\frac{P^T_{t+1}(1-g)}{1+r}-\frac{P^T_t(1+r)}{1+r}\right).\label{pi1T}
 \end{equation}
-The tax is imposed at the end of $t_0$. Markets subsequently adjust to a new equilibrium with competition returning profits to zero and allowing us to express equilibrum rents as a function of the new tax,
+The tax is imposed at the end of $t_0$. Markets subsequently adjust to a new equilibrium with competition returning profits to zero and allowing us to express equilibrium rents as a function of the new tax,
 \begin{equation}
-	R^T_t=C^T_t-\left(\frac{P^T_{t+1}(1-g)}{1+r}-P^T_t\right) \text{ for }T>0
+	R^T_t=C^T_t-\left(\frac{P^T_{t+1}(1-g)}{1+r}-P^T_t\right) \text{ for }t>0
 \end{equation}
 Then efficient use of information and competition cause prices in the next period to equal prices in this period, allowing us to simplify the rental equation,
 \begin{equation}
-R^T_t=C^T_t-\frac{P^T_{t}(g+r)}{1+r}\text{ for }T>0.
+R^T_t=C^T_t-\frac{P^T_{t}(g+r)}{1+r}\text{ for }t>0.
 \end{equation}
 Because the tax does not influence decisions made at the margin, we assume rents and costs do not change due to the property tax. 
 
@@ -355,11 +355,26 @@ Next we can consider the change in profits during $t=0$ as a function of $g$ and
 	&=& P_1\left(\frac{r(1-g)}{(g+r)(1+r)}-\frac{1}{1+r}\right)\\
 	&=&-P_0\frac{g}{g+r}
 \end{eqnarray}
-Where we have relied on equality of prices between the two scenarios in $t=0$ and also that without a tax $P_0=P_1$. The total welfare impact on the firm and household is simply this change in profits in time period zero.
-Given that rents do not change but the interest payment on the price of the house decrease, we can further consider how rents change due to the tax,
+Where we have relied on equality of prices between the two scenarios in $t=0$ and also that without a tax $P_t=P_0$. The total welfare impact on the firm and household is simply this change in profits in time period zero.
+Given that rents do not change but the interest payment on the price of the house decrease, we can decompose the change in rents due to the tax,
 \begin{eqnarray}
 	\Delta^T R_t&=&P^T_t\frac{g+r}{1+r}-P_t\frac{r}{1+r}\\
-	&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}
+	&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}.
+\end{eqnarray}
+The first term is the present value of the annual tax payment and the second term is the rental payment reduction due to a lower house price. 
+\subsection{A Corrective Tax}
+While pecuniary externalities are not an inefficiency that merits correction on the grounds of economic efficiency, political and ethical perspectives may call for such a correction. For example, a public expenditure that enhances air quality is likely designed to benefit the households in a region, regardless of whether or not they own a house. We are interested in identifying a property tax rate that can be designed to exactly offset the pecuniary externality that transfers the benefits of the amenity change from renter to owner
+Consider an increase in amenities that causes a change in welfare, as described in \ref{deltaW2}. Next, let $T_t$ for $t>0$ be a tax on the home owner, and let, $S_t$ for $t>0$, be an equivalent subsidy paid to the renter,
+\begin{eqnarray}
+	\Delta W_{\mathrm{PV}}&=& \left(\Delta P_{\mathrm{PV}}-T_{\mathrm{PV}}\right)+\left(\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}+S_{\mathrm{PV}}\right)\nonumber\\
+\end{eqnarray}
+
+ , which we combine with a tax equivalent to the change in profits, $T_{\mathrm{PV}}=
+ \Delta \pi_{\mathrm{PV}}$ that come about due to the change in amenities. A subsidy, $S_{\mathrm{PV}}$ equivalent to the tax is paid to the renters,
+
+\begin{eqnarray}
+\frac{\Delta P_1}{1+r}&=&P_1\frac{g}{g+r}\\
+g&=&\frac{\% \Delta P_1*r}{1+r-\% \Delta P_1}
 \end{eqnarray}
 
 
@@ -370,9 +385,9 @@ Given that rents do not change but the interest payment on the price of the hous
 
 
 \section{Discussion})
-Extending the work of \cite{kanemoto} to distinguish between owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
+Extending the work of \cite{kanemoto} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
 
-It is worth emphasizing that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. If 
+We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. If 
 
 
 
