@@ -280,20 +280,20 @@ Now we can consider the marginal welfare measure for this market of renter-owner
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}&=&\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t} \nonumber\\
 	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} \nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber\\
 	%&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial q_t}*(1+r)^{-t}\nonumber\\
-	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber
+	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
 	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}*(1+r)^{-t}\nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \nonumber
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
 \end{eqnarray}
 
 Next we can assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time and write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} 
 	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +
-	\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r^{-t}) \label{mwtpOwner0}\\
+	\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \label{mwtpOwner0}\\
 	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} +
-	 \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{r}{1+r}*\frac{\partial P_t}{\partial q_t}(1+r^{-t}) \nonumber\\
+	 \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{r}{1+r}*\frac{\partial P_t}{\partial q_t}(1+r)^{-t} \nonumber\\
 	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}} \label{mwtpOwner1}
 \end{eqnarray}
 Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the renter's experience in the rental marketplace (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
@@ -379,6 +379,11 @@ which can be solved for the corrective property tax rate, $g$,
 	g=\frac{\% \Delta P_1*r}{1+r-\% \Delta P_1} \label{gcorrect}
 \end{equation}
 Because hedonic models are often estimated with a log-transformed dependent variable, estimating \ref{gcorrect} is straightforward. To avoid the situation where the firm captures the benefits of the subsidy, the payment of the subsidy would need to be independent of the renter's decision about where to live. Renter-owners would experience no price change and they would receive a subsidy as well as pay a tax. Firms that own multiple houses would pay the tax multiple times while households receive all of the subsidies. Firms would experience no change in profits because the pecuniary impact of the corrective tax would cancel out the pecuniary impact of the amenity improvement.
+Notably, this policy is revenue neutral for the government and the firm because, 
+\begin{equation}
+	P_0*\frac{g}{g+r}=T_{\mathrm{PV}}=S_{\mathrm{PV}}=\Delta \pi_{\mathrm{PV}}=-\Delta^T \pi_{\mathrm{PV}}=\sum_{t>0}\frac{g*P_t^T}{(1+r)^{-t}}.
+\end{equation}
+Where the first term is the change in profits from the tax and the last term is the government's tax revenue. 
 
  
 
@@ -388,15 +393,18 @@ Because hedonic models are often estimated with a log-transformed dependent vari
 
 
 
-\section{Discussion})
-Extending the work of \cite{kanemoto} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
+\section{Discussion}
+Throughout this paper we have mostly ignored the methodological challenges associated with quantifying changes in WTP that dominate the literature. It seems likely to us that the way future willingness to pay, future rents, future costs, etc are capitalized into today's prices increase the challenge associated with identifying an individual's demand. At the same time, we expect that the enhanced clarity that comes from separating the renter from the owner will ultimately determine the appropriate technique for quantifying Hicksian and Marshallian measures of welfare change.
 
-We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. If 
+We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters 
 
 We find the idea of a corrective tax in the context of publicly funded enhancements to environmental amenities to be fascinating. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice.
 
+An important limitation of this work is the absence of investment, which we expect would be sensitive to property taxes, leading to a trade-off in well-being for residents of an area that institute a corrective tax as developed above.
 
+While we have focused on single family homes in the development of our model, these results are applicable to any productive asset, such as a factory. For example, if an industry uses natural resources in production, then public enhancements to natural resources will tend to reduce production costs increasing profitability if competition . 
 
+Extending the work of \cite{kanemoto88} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
 \begin{thebibliography}{}
 %
 
@@ -456,7 +464,7 @@ Statistic",''
 \bibitem[\protect\citeauthoryear{Freeman}{1980}]{freeman80}
 \textsc{Freeman, A.M.} (1980):
 ``Land Prices Substantially Underestimate the Value of Environmental Quality: A Comment,''
-\textit{The Review of Economics and Statistics}, , 154--156.
+\textit{The Review of Economics and Statistics}, 62(1), 154--156.
 \endbibitem
 
 
@@ -478,6 +486,13 @@ Washington DC, U.S.A.: Routledge
 \textsc{Holcombe, R.G. and Sobel, R.S.} (2001):
 ``Public Policy Toward Pecuniary Externalities,''
 \textit{Public Finance Review}, 29(4), 304--325.
+\endbibitem
+
+
+\bibitem[\protect\citeauthoryear{Kanemoto}{1988}]{kanemoto88}
+\textsc{Kanemoto, Y.} (1988):
+``Hedonic Prices and the Benefits of Public Projects,''
+\textit{Econometrica}, 56(4), 981--989.
 \endbibitem
 
 
