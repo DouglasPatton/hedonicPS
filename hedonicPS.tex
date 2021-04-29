@@ -128,9 +128,9 @@ Smith and Huang (1995) conducted an early meta-analysis of hedonic studies relat
 
 Zabel and Kiel (2000) discuss measuring the benefits to homeowners and their households” and focus exclusively on quantifying benefits related to consumer demand, as evidenced by their discussion of the indirect utility function when aggregating economic benefits for the purpose of benefit cost anaylsis. In their concluding remarks, Zabel and Kiel (2000) compare their results to Smith and Huang’s (1995) results while describing them as benefits to the home owners. 
 
-Bui and Mayer (2003) quantify environmental amenity benefits by assessing their capitalization into housing prices. Bishop and Murphy (2011,2019) estimate dynamic models that include expectations about future prices 
+Bui and Mayer (2003) quantify environmental amenity benefits by assessing their capitalization into housing prices. 
 
-\cite{niskanen77} and \cite{freeman80} develop and extend dynamic hedonic models and extend them to quantify benefits in the presence of taxes. Around the same time, \cite{sonstelie80} develop a dynamic approach to hedonic modeling that incorporates interest rates and tax rates and the "user costs" a landlord experiences. None of these works distinguish between the well-being of the occupant and owner of a housing unit.
+\cite{niskanen77} and \cite{freeman80} develop and extend dynamic hedonic models and extend them to quantify benefits in the presence of taxes. Around the same time, \cite{sonstelie80} develop a dynamic approach to hedonic modeling that incorporates interest rates and tax rates and the "user costs" a landlord experiences. \cite{hendershott83} distinguish between owners and renters when modeling the impacts of tax treatment on households. \cite{poterba84} take a similar approach and use the concept of user cost to assess how inflation and tax rates impact housing prices and investment in new construction in the context of macroeconomic asset markets, focusing their model on owner-occupied housing. More recently, Bishop and Murphy (2011, 2019) estimate dynamic models that include a home-buyer's expectations about future prices. None of these works distinguish between the well-being of the renter and the owner of a housing unit, though \cite{hendershott83} does distinguish between the income of a renter and an owner.
 
 
 \subsection{External Economies} 
@@ -139,7 +139,7 @@ In Economics, pecuniary and technological externalities have been defined to cha
 
 Externalities are also referred to as spillovers. Kelly (2011) discuss strategic spillovers where externalities are generated deliberately as a form of “extortion”. 
 
-Investigations of pecuniary externalities in environmental economics often focus on indirect effects. The debate over the indirect effects of biofuel subsidies provides a template for considering some of the ways relative price changes may be included in policy design. Zilberman et al. (2011) examine the impact of biofuel subsidies on indirect land use change through increased food prices, and they begin by noting the validity of considering pecuniary externalities in policy design. In Zilberman et al (2011) and other studies such as Zilberman et al. (2013) a similar group of authors cast doubt on the inclusion of indirect land use change in biofuel subsidy planning largely because of the myriad other indirect effects that add to uncertainty and which should also be included, in an ideal world. 
+Investigations of pecuniary externalities in environmental economics often focus on indirect effects. The debate over the indirect effects of biofuel subsidies provides a template for considering some of the ways relative price changes may be included in policy design. Zilberman et al. (2011) examine the impact of biofuel subsidies on indirect land use change through increased food prices, and they begin by noting the validity of considering pecuniary externalities in policy design. In Zilberman et al (2011) and other studies such as Zilberman et al. (2013) a similar group of authors cast doubt on the inclusion of indirect land use change in biofuel subsidy planning largely because of the myriad other indirect effects that add to uncertainty and which should also be included in an ideal world but are left out in practice. 
 
 
 
@@ -154,9 +154,10 @@ Improved environmental quality can lead to gentrification, displacing lower inco
 
 
 \section{Methods}
-\subsection{Long Run Dynamics}
-In this section, we develop a dynamic model of a firm and a household who can buy/sell and rent a unit of housing that is a bundle of attributes, $z$, and an additional attribute, $q$, the housing attribute of interest which we might imagine is an environmental amenity such as clean air. We assume that the firm and the household trade in competitive markets with perfect knowledge aside from an unexpected shock, discussed below.
-We assume that the firm is profit maximizing and the household or consumer is utility maximizing. The firm and the household make decisions at each time period to buy/sell and to rent. We focus our analysis on a typical housing unit which may be owned by different firms and rented by different households each year. 
+\subsection{Owners and Renters}
+In this section, we develop a dynamic model of a profit maximizing firm that can buy and sell a unit of housing in an asset market and a utility maximizing household who can rent a unit of housing in a rental market. The unit of housing is a bundle of attributes, $z$, and a separate attribute, $q$, of primary interest which we might imagine is an environmental amenity such as clean air. We assume that the asset and rental markets are each in a competitive equilibrium and that participants have complete information, aside from any unexpected shocks.
+We assume that the household is maximizing a utility function constrained by their budget and conditional on prices and income and that there is a corresponding indirect utility function. The households optimization problem is over a set of houses with continuously variable attributes, leading to the outcome where each household's marginal willingness to pay for an attribute is equal to the implicit rental price of that housing attribute, as will be discussed below.
+The firm and the household make decisions at each time period to buy/sell and to rent. We focus our analysis on a typical housing unit which may be owned and rented by different firms and households each year. 
 The household and the firm interact at the beginning of each time period when the household pays rent. The transaction is the result of the household maximizing the present value of their utility. Included in the household's first order conditions would be the  
 The firm purchases a house at time $t$ for $P_t$ borrowed at interest rate $r$. Later, at $t+1$, the firm sells the house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$. After purchasing the house, the firm rents
 out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The present value of the producer’s profit for a single time period (assuming no fixed costs) will be,
@@ -176,7 +177,7 @@ to pay for a single point on the household’s demand curve for housing in time 
 \begin{equation}
 	\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} \label{foc}
 \end{equation}
-Returning to  	the firm, if we assume the market uses information to price houses efficiently, today’s price will equals tomorrow’s
+Returning to the firm, if we assume the market uses information to price houses efficiently, today’s price will equals tomorrow’s
 price,
 \begin{equation*}
 	P_t=P_{t+1}.
@@ -268,11 +269,7 @@ If we consider renters who also own a home (though not necessarily the one they 
 	&=&	\mathit{WTP}(q'_t,z_t,y+\pi_t*r) \text{ for } t>0
 \end{eqnarray*}
 Notably, this implies that the previous WTP measures are implicitly for renters who do not own a house.
-%we can define WTP for renters who do not own, 
-%\begin{eqnarray*}
-%	\mathit{WTP}_t^{\mathit{renter}}&=&\mathit{WTP}(q_t,z_t,y_t)\text{ and}\\
-%	\mathit{WTP'}_t^{\mathit{renter}}&=&\mathit{WTP}(q'_t,z_t,y_t)\text{ for } t>0,\\
-%\end{eqnarray*}	
+
 
 
 Now we can consider the marginal welfare measure for this market of renter-owners,
@@ -306,24 +303,12 @@ which can be rearranged to highlight the relationship between marginal willingne
 	\frac{\partial P_1} {\partial q_{t>0}}=\left(
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
 \end{equation*}
-%Next we decompose the partial derivative for the owner's $WTP$ using \ref{mwtpOwner1} to show the relative impact on marginal price of homeownership,
-%\begin{eqnarray}
-%\frac{\partial P_1} {\partial q_{t>0}}&=&\left(
-%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
-%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)\\
-%&=&\left(
-%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
-%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
-%+\frac{\lambda}{1+r+\lambda}*\frac{\partial P_1}{\partial q_{t>0}}\\
-%&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} 
-%-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}
-% \label{margialPWTP}
-%\end{eqnarray}
+
 
 When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Given our assumption of an MPC equal to one, pecuniary externalities do not transmit wealth effects into higher rents. To the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live.
 
 \subsection{Taxes}
-It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a tax at the end of each year on $P_{t+1}$ equal to $T_t=g*P_t$. We incorporate this into the firm's profit equation from \ref{pi1},
+It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}$. We can incorporate this into the firm's profit equation from \ref{pi1},
 \begin{equation}
 	\pi^T_t = (R^T_t-C^T_t)+\left(\frac{P^T_{t+1}(1-g)}{1+r}-\frac{P^T_t(1+r)}{1+r}\right).\label{pi1T}
 \end{equation}
@@ -396,7 +381,7 @@ Where the first term is the change in profits from the tax and the last term is 
 \section{Discussion}
 Throughout this paper we have mostly ignored the methodological challenges associated with quantifying changes in WTP that dominate the literature. It seems likely to us that the way future willingness to pay, future rents, future costs, etc are capitalized into today's prices increase the challenge associated with identifying an individual's demand. At the same time, we expect that the enhanced clarity that comes from separating the renter from the owner will ultimately determine the appropriate technique for quantifying Hicksian and Marshallian measures of welfare change.
 
-We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. For simplicity we omit this uncertainty from our model. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters 
+We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. In the context of horizontal sorting equilibrium models for occupants of housing, the expectations of firms and households about this process are built into observed prices. Our simple model omits this information, which we expect would lead to underestimation of benefits due to underestimated costs such as moving costs. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters \cite{bishop19} 
 
 We find the idea of a corrective tax in the context of publicly funded enhancements to environmental amenities to be fascinating. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice.
 
@@ -435,8 +420,8 @@ Statistic",''
 \textit{American Economic Review}, 101(3), 625--629.
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Bishop, Kelly, and Murphy}{2019}]{bishop19}
-\textsc{Bishop, Kelly C., and Alvin D. Murphy} (2019):
+\bibitem[\protect\citeauthoryear{Bishop and Murphy}{2019}]{bishop19}
+\textsc{Bishop, K.C., and Murphy, A.D.} (2019):
 ``Valuing time-varying attributes using the hedonic model: when is a dynamic approach necessary?,''
 \textit{Review of Economics and Statistics}, 101(1), 134--145.
 \endbibitem
@@ -475,11 +460,16 @@ Washington DC, U.S.A.: Resources for the Future.
 \endbibitem
  
 \bibitem[\protect\citeauthoryear{Freeman, Herriges, and Kling}{2014}]{freeman14}
-\textsc{Freeman III, A. Myrick, Joseph A. Herriges, and Catherine L. Kling.} (2014):
+\textsc{Freeman III, A.M., Herriges, J.A., and Kling, C.L.} (2014):
 \textit{The Measurement Of Environmental And Resource Values: Theory And Methods}.
 Washington DC, U.S.A.: Routledge
 \endbibitem 
 
+\bibitem[\protect\citeauthoryear{Hendershott and Slemrod}{1983}]{hendershott83}
+\textsc{Hendershott, P.H. and Slemrod, J.} (1983):
+``Taxes and the User Cost of Capital for Owner-Occupied Housing,''
+\textit{Real Estate Economics}, 10(4), 375--393.
+\endbibitem
 
 , 2001. . , 29(4), pp.304-325. 
 \bibitem[\protect\citeauthoryear{Holcombe and Sobel}{2001}]{holcombe01}
@@ -504,12 +494,16 @@ Washington DC, U.S.A.: Routledge
 \endbibitem
 
 
+\bibitem[\protect\citeauthoryear{Palmquist}{1989}]{palmquist89}
+\textsc{Palmquist, R.B.} (1989):
+``Land as a Differentiated Factor of Production: A Hedonic Model and its Implications for Welfare Measurement,''
+\textit{Land Economics}, 65(1), 23--28.
+\endbibitem
 
-Palmquist, R.B., 1989. Land as a differentiated factor of production: A hedonic model and its implications for welfare measurement. Land Economics, 65(1), pp.23-28. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{b12}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+\bibitem[\protect\citeauthoryear{Poterba}{1984}]{poterba84}
+\textsc{Poterba, J. M.} (1984):
+``Tax Subsidies to Owner-Occupied Housing: An Asset-Market Approach,''
+\textit{The Quarterly Journal of Economics}, 99(4), 729--752.
 \endbibitem
 
 
