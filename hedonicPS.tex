@@ -257,9 +257,9 @@ We are ultimately interested in understanding the relationship between price cha
 \end{eqnarray}
 Which can be rearranged to help us understand the partial derivative of the price function,
 \begin{equation}
-	\frac{\partial P_1} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}
+	\frac{\partial P_1} {\partial q_{t>0}}=\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)(1+r) \label{marginalPrice}
 \end{equation}
-If we assume that costs do not change, then we have the standard tangency condition used in the static ownership literature.
+If we assume that costs do not change, then we have, in present value terms, the standard tangency condition used in the static ownership literature. If marginal costs are positive (e.g., increased property taxes), then the implicit price tends to underestimate marginal WTP. On the other hand, if marginal costs are negative (e.g., reduced defensive expenditures), then the implicit price tends to overestimate marginal WTP.
 
 \subsection{Renters Who Own}
 If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a policy or treatment that increases profits. If we consider the willingness to pay for housing function and that increases in wealth translate to smooth increases in consumption in perpetuity (implying the household's marginal propensity to consume (MPC) equals one), then income becomes a function of attributes of the house, such as q. So we can define WTP for renters who own,
@@ -296,19 +296,19 @@ Next we can assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambd
 Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the renter's experience in the rental marketplace (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
 
 \begin{eqnarray*}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+r+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
 \end{eqnarray*}
 which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
 \begin{equation*}
 	\frac{\partial P_1} {\partial q_{t>0}}=\left(
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+r+\lambda}\right)
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1+r}{1+\lambda}\right)
 \end{equation*}
 
 
 When the renter-owner is choosing the optimal location, there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership. However, an increase in $q$ such as a shock or treatment that affects the buyer's $WTP$ does affect the owner's profits. This leads to the situation where the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Given our assumption of an MPC equal to one, pecuniary externalities do not transmit wealth effects into higher rents. To the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live.
 
 \subsection{Taxes}
-It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}$. We can incorporate this into the firm's profit equation from \ref{pi1},
+It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}*\frac{1}{1+r}$. We can incorporate this into the firm's profit equation from \ref{pi1},
 \begin{equation}
 	\pi^T_t = (R^T_t-C^T_t)+\left(\frac{P^T_{t+1}(1-g)}{1+r}-\frac{P^T_t(1+r)}{1+r}\right).\label{pi1T}
 \end{equation}
@@ -381,15 +381,16 @@ Where the first term is the change in profits from the tax and the last term is 
 \section{Discussion}
 Throughout this paper we have mostly ignored the methodological challenges associated with quantifying changes in WTP that dominate the literature. It seems likely to us that the way future willingness to pay, future rents, future costs, etc are capitalized into today's prices increase the challenge associated with identifying an individual's demand. At the same time, we expect that the enhanced clarity that comes from separating the renter from the owner will ultimately determine the appropriate technique for quantifying Hicksian and Marshallian measures of welfare change.
 
-We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. In the context of horizontal sorting equilibrium models for occupants of housing, the expectations of firms and households about this process are built into observed prices. Our simple model omits this information, which we expect would lead to underestimation of benefits due to underestimated costs such as moving costs. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters \cite{bishop19} 
+We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. In the context of horizontal sorting equilibrium models for occupants of housing, the expectations of firms and households about this process are built into observed prices. Our simple model omits this information, which we expect would lead to underestimation of benefits due to underestimated costs such as moving costs. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters (\cite{bishop19}) 
 
-We find the idea of a corrective tax in the context of publicly funded enhancements to environmental amenities to be fascinating. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice.
+A key assumption behind our use of the term, pecuniary externality, is that the policy in consideration is targeting households not property owners. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. The scope of a property owner's legal rights is also an important component of evaluating the feasiblity of applying a corrective tax, as described here. Considering the spatial correlations that exist between poverty and pollution (\cite{banzhafJustice19})), environmental cleanup and various publicly provided services, the designers of the subsidy would have numerous opportunities to target payments at individuals with a high marginal utility of income. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice. 
 
-An important limitation of this work is the absence of investment, which we expect would be sensitive to property taxes, leading to a trade-off in well-being for residents of an area that institute a corrective tax as developed above.
+
+An important limitation of this work is the absence of investment in the model, which we expect would be sensitive to property taxes, leading to a trade-off in well-being for residents of an area that institute a corrective tax as developed above.
 
 While we have focused on single family homes in the development of our model, these results are applicable to any productive asset, such as a factory. For example, if an industry uses natural resources in production, then public enhancements to natural resources will tend to reduce production costs increasing profitability if competition . 
 
-Extending the work of \cite{kanemoto88} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be an interesting extension of this work.
+Extending the work of \cite{kanemoto88} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be another interesting extension of this work.
 \begin{thebibliography}{}
 %
 
@@ -471,13 +472,11 @@ Washington DC, U.S.A.: Routledge
 \textit{Real Estate Economics}, 10(4), 375--393.
 \endbibitem
 
-, 2001. . , 29(4), pp.304-325. 
 \bibitem[\protect\citeauthoryear{Holcombe and Sobel}{2001}]{holcombe01}
 \textsc{Holcombe, R.G. and Sobel, R.S.} (2001):
 ``Public Policy Toward Pecuniary Externalities,''
 \textit{Public Finance Review}, 29(4), 304--325.
 \endbibitem
-
 
 \bibitem[\protect\citeauthoryear{Kanemoto}{1988}]{kanemoto88}
 \textsc{Kanemoto, Y.} (1988):
@@ -486,11 +485,11 @@ Washington DC, U.S.A.: Routledge
 \endbibitem
 
 
-, 1977. . , pp.375-377.
+
 \bibitem[\protect\citeauthoryear{Niskanen and Hanke}{1977}]{niskanen77}
 \textsc{Niskanen, W.A. and Hanke, S.H.} (1977):
 ``Land prices substantially underestimate the value of environmental quality,''
-\textit{The Review of Economics and Statistics}, ??, 375--377.
+\textit{The Review of Economics and Statistics}, 59(3), 375--377.
 \endbibitem
 
 
@@ -526,17 +525,17 @@ Washington DC, U.S.A.: Routledge
 \endbibitem
 
 
-Zilberman, D., Barrows, G., Hochman, G. and Rajagopal, D., 2013. On the indirect effect of biofuel. American Journal of Agricultural Economics, 95(5), pp.1332-1337. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{b13}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+\bibitem[\protect\citeauthoryear{Zilberman, et al.}{2013}]{zilberman13}
+\textsc{Zilberman, D., Barrows, G., Hochman, G. and Rajagopal, D.} (2013):
+``On the Indirect Effect of Biofuel,''
+\textit{American Journal of Agricultural Economics}, 95(5), 1332--1337.
 \endbibitem
-Zilberman, D., Hochman, G. and Rajagopal, D., 2011. On the inclusion of indirect land use in biofuel. U. Ill. L. Rev., p.413. 
-\bibitem[\protect\citeauthoryear{Aumann}{1987}]{b14}
-\textsc{Aumann, R. J.} (1987):
-``Correlated Equilibrium as an Expression of Bayesian Rationality,''
-\textit{Econometrica}, 55, 1--18.
+
+, 2011. . ., p.413. 
+\bibitem[\protect\citeauthoryear{Zilberman, Hochman, and Rajagopal}{2011}]{zilberman11}
+\textsc{Zilberman, D., Hochman, G. and Rajagopal, D.} (2011):
+``On the Inclusion of Indirect Land Use in Biofuel,''
+\textit{University of Illinois Legal Review}, 55, 1--18.
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Aumann}{1987}]{b1}
