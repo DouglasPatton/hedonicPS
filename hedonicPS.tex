@@ -154,9 +154,10 @@ out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The pres
 	\pi_t = (R_t-C_t)+\left(\frac{P_{t+1}}{1+r}-\frac{P_t(1+r)}{1+r}\right).\label{pi1}
 \end{equation}
 Where the first term is the net revenue from rent and costs for the time period and the second term
-represents the present value (i.e., at $t=0$) of house price returns.
+represents the present value (i.e., at the start of the time period, $t$) of house price returns.
 
-Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y)$ for that same housing unit. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We can assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ and that $\mathit{WTP}_t \geq R_t$. One might estimate this function using the hedonic price method and time series rent data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
+Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y_t)$ for that same housing unit, where $y_t$ is the renter's income. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We  assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ for houses in the market. One might estimate this function using the hedonic price method and time series rent data rather than housing price data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
+
 Each time period, the consumer’s monetized benefit is:
 \begin{equation*}
 	 w_t=\mathit{WTP}_t-R_t
@@ -177,14 +178,15 @@ We can rewrite the profit equation in \ref{pi1} as,
 \begin{equation}
 	\pi_t=(R_t-C_t)-P_t*\frac{r}{1+r}.\label{pi1.1}
 \end{equation}
-Further, we assume arbitrage in the asset market causes $\pi_t=0$, allowing us to solve for the equilibrium rent,
+Further, we assume arbitrage in the asset market leads to a steady-state with $\pi_t=0$, allowing us to solve for the equilibrium rent,
 \begin{equation*}
 	R_t=C_t+P_t*\frac{r}{1+r}.
 \end{equation*}
 Which says that over a time period rent is equal to costs during the time period plus the present value of
-the interest payment on the cost of the house as capital. This equation is the arbitrage condition given our assumption that markets are in their steady-state (\cite{poterba84}). If rent were lower than this value, profits
+the interest payment on the cost of the house as capital. If rent were lower than this value, profits
 would be negative, firms would exit, house prices would fall, and the interest payments and other costs
 would decline until profits were no longer negative.
+
 For each housing unit we can characterize the total welfare, $W_t$ associated with a firm owning and a household renting a house for a time period,
 \begin{eqnarray*}
 	W_t & = & w_t+\pi_t,\\
@@ -218,9 +220,9 @@ Now we can calculate the present value of the change in total welfare due to the
 \begin{eqnarray}
 	\Delta W_{\mathrm{PV}}&=&\Delta \pi_0+\sum_{t>0}\Delta w_t(1+r)^{-t}\nonumber\\
 	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta R_t)(1+r)^{-t} \label{deltaW1}\\
-	&=&\Delta P_{1_{\mathrm{PV}}}+\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}\label{deltaW2}\nonumber
+	&=&\Delta P_{1_{\mathrm{PV}}}+\Delta\mathit{WTP}_\mathrm{PV}-\Delta R_{\mathrm{PV}}\label{deltaW2}
 \end{eqnarray}
-This is an intriguing result that helps refine how we compute the distribution of benefits from public projects that enhance amenities. The house price return is an unexpected profit enjoyed by the owner. This benefit is immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. This result may seem inconsistent with the usual measure of welfare change, such as in \cite{freeman14} and \cite{banzhaf20}, but next we consider the pattern of changing rent that accompanies the change in price to derive a more familiar measure. 
+This is an intriguing result that helps refine how we compute the distribution of benefits from public projects that enhance amenities. The house price return is an unexpected profit enjoyed by the owner. This benefit to the firm is immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. the result in \ref{deltaW2} result may seem inconsistent with the usual measure of welfare change, such as in \cite{freeman14} and \cite{banzhaf20}, but next we consider the pattern of changing rent that accompanies the change in price to derive a more familiar measure. 
 
 While $\Delta\pi_t=0$ for $t>0$, it is still helpful to consider the equation for the change in profits because it can help us understand how rents will change,
 \begin{eqnarray}
@@ -234,7 +236,7 @@ Returning to our measure of welfare change in equation \ref{deltaW1}, we can sub
 	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta C_t)(1+r)^{-t}-\frac{\Delta P_1}{1+r}\nonumber\\
 	&=&\Delta \mathit{WTP}_{\mathrm{PV}}-\Delta C_{\mathrm{PV}} \label{deltaW2}
 \end{eqnarray}
-Which is the dynamic counterpart to the usual welfare measure. It is important to note that this measure does not convey the imbalanced flow of benefits to the owner and the renter. Indeed, because the public policy that improved the amenity was targeting consumers who would directly benefit, it is a pecuniary externality that competition among renters allows the homeowner to capture a large share of the benefits through rising rent that propels a rising asset value.
+Which is the dynamic counterpart to the usual welfare measure (e.g., \cite{freeman14}). It is important to note that this measure does not convey the imbalanced flow of benefits to the owner and the renter. Indeed, because the public policy that improved the amenity was targeting consumers who would directly benefit, it is a pecuniary externality that competition among renters allows the homeowner to capture a large share of the benefits through rising rent that propels a rising asset value.
 
 \subsection{Marginal Effects}
 We are ultimately interested in understanding the relationship between price changes and welfare measures. In the usual approach that is static and does not distinguish between owner and renter, consumer optimization leads to a first order condition,$\frac{\partial{\mathit{WTP}}}{\partial q}=\frac{\partial P_h}{\partial q}$, which is the theoretical result that connects observable prices to WTP. I take a similar approach using the dynamic model described above, but with an infintesimally small treatment, $\partial q_{t>0}$ applied to all future time periods. I rely on the first order condition in equation \ref{foc} from the renter's optimal choice to reveal information about the consumer's marginal willingness to pay for $q$,
