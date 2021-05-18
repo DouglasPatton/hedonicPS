@@ -273,27 +273,27 @@ Now we can consider the marginal welfare measure from an increase in the amenity
 	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t^o}(1+r)^{-t} \nonumber\\
 	%&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial q_t}*(1+r)^{-t}\nonumber\\
 	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
-	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t^o}*(1+r)^{-t}\nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t}(1+r)^{-t} \nonumber
+	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t^\rho}*(1+r)^{-t}\nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t^o}(1+r)^{-t} \nonumber
 \end{eqnarray}
 Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
-	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}} \label{mwtpOwner1}
+	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q^o_{t>0}} \label{mwtpOwner1}.
 \end{eqnarray}
-Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$ to connect the equations of the firm and household for the renter-owner. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the experience of future renters' optimizing decisions in the rental market (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
+The first term in the right hand side of \ref{mwtpOwner1} describes the experience of the renter's future optimizing decisions in the rental market, though evaluated with a higher income than before, where choosing from housing options causes $q_t^\rho$ to vary so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
 
 \begin{eqnarray*}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C^\rho_{\mathrm{PV}}}{\partial q^\rho_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P^o_1}{\partial q^o_{t>0}}.
 \end{eqnarray*}
-which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
+Further, we can assume that the derivatives of the cost and price functions with respect to the amenity are the same for the house that the individual rents and the house they own, abstracting from the distinction between the two houses. The result highlights the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
 \begin{equation*}
 	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda}\right)
 \end{equation*}
 
 
-When the renter-owner is choosing the optimal levels of $z_t$ and $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in $q$ comes as a shock to future renters' $\mathit{WTP}$ and owners' profit  re-ordering of households and a different sorting pattern than otherwise. Thus the marginal price under-estimates the benefit of the amenity change to renter-owners. 
+When the renter-owner is choosing the optimal levels of $z_t$ and $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in $q$ comes as a shock to future renters' WTP and owners' profit  re-ordering of households and a different sorting pattern than otherwise. Thus the marginal price under-estimates the benefit of the amenity change to renter-owners. Conversely, we expect that in markets dominated by renter-owners, the marginal price over-estimates the benefits to renters who do not own.
 
 
 
