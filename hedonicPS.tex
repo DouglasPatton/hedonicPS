@@ -133,7 +133,7 @@ Investigations of pecuniary externalities in environmental economics often focus
 
 
 \subsection{Environmental Justice} 
-
+\cite{banzhafJustice19} provide an overview of environmental justice
 Improved environmental quality can lead to gentrification, displacing lower income households that tend to rent rather than own their homes (Banzhaf et al 2019). 	 
 
 
@@ -193,28 +193,28 @@ For each housing unit we can characterize the total welfare, $W_t$ associated wi
 	& = & \mathit{WTP}_t-R_t+0.
 \end{eqnarray*}
 \subsection{Assessing a Shock}
-We define a shock, such as an unexpected treatment, that improves environmental quality from $q$ to $q'$ that happens at the end of $t=0$ causing $q$ to increase uniformly in future time periods such that $\Delta q_t=q'_t-q_t>0$ for $t>0$.
-The post-shock willingness to pay for the higher amenity level,$\mathit{WTP'}_t=\mathit{WTP}(q'_t,z_t,y)$ along with the post-shock equilibrium rent, $R'_t=R(q'_t,z_t,P'_t,C'_t)$ allows us to write the post-shock welfare measure,
+We define a shock, such as an unexpected treatment, that improves environmental quality from $q$ to $q^\prime$ that happens at the end of $t=0$ causing $q$ to increase uniformly in future time periods such that $\Delta q_t=q^\prime_t-q_t>0$ for $t>0$.
+The post-shock willingness to pay for the higher amenity level,$\mathit{WTP}^\prime_t=\mathit{WTP}(q^\prime_t,z_t,y)$ along with the post-shock equilibrium rent, $R^\prime_t=R(q^\prime_t,z_t,P^\prime_t,C^\prime_t)$ allows us to write the post-shock welfare measure,
 \begin{equation*}
-	w'_t=\mathit{WTP'}_t-R'_t \text{ for } t>0
+	w^\prime_t=\mathit{WTP}^\prime_t-R^\prime_t \text{ for } t>0
 \end{equation*}
 The difference between the treated and untreated states for the consumer is,
 \begin{eqnarray*}
-	\Delta w_t&=&w'_t-w_t=WTP'_t-WTP_t-(R'_t-R_t)\\
+	\Delta w_t&=&w^\prime_t-w_t=\mathit{WTP}^\prime_t-\mathit{WTP}_t-(R^\prime_t-R_t)\\
 	&=&\Delta\mathit{WTP}_t-\Delta R_t
 \end{eqnarray*}
 For the producer’s alternative profit in the treated state of reality we write,
 \begin{equation*}
-	\pi'_t = (R'_t-C'_t)+\left(\frac{P'_{t+1}}{1+r}-\frac{P'_t(1+r)}{1+r}\right)\text{ for } t>0.
+	\pi^\prime_t = (R^\prime_t-C^\prime_t)+\left(\frac{P^\prime_{t+1}}{1+r}-\frac{P^\prime_t(1+r)}{1+r}\right)\text{ for } t>0.
 \end{equation*}
 which can be simplified in the manner of \ref{pi1.1} by assuming competition returns profits to zero and markets function efficiently,
 \begin{equation*}
-\pi'_t = (R'_t-C'_t)-P'_t*\frac{r}{1+r}\text{ for } t>0.\label{pi2}
+\pi^\prime_t = (R^\prime_t-C^\prime_t)-P^\prime_t*\frac{r}{1+r}\text{ for } t>0.\label{pi2}
 \end{equation*}
 
-The difference between the treated and untreated states for the producer is zero in all subsequent periods due to the effects of competition and arbitration, but in the period where the treatment occurs,
+The difference between the treated and untreated states for the producer is zero in all subsequent periods due to the effects of competition and arbitrage, but in the period where the treatment occurs,
 \begin{equation}
-	\Delta\pi_0=\frac{P'_1-P_0}{1+r}=\frac{\Delta P_1}{1+r}\label{pitzero}
+	\Delta\pi_0=\frac{P^\prime_1-P_0}{1+r}=\frac{\Delta P_1}{1+r}\label{pitzero}
 \end{equation}
 Now we can calculate the present value of the change in total welfare due to the treatment,
 \begin{eqnarray}
@@ -253,39 +253,38 @@ Which can be rearranged to help us understand the partial derivative of the pric
 If we assume that costs do not change, then we have, in present value terms, the standard tangency condition used in the static ownership literature. If marginal costs are positive (e.g., increased property taxes), then the implicit price tends to underestimate marginal WTP. On the other hand, if marginal costs are negative (e.g., reduced defensive expenditures), then the implicit price tends to overestimate marginal WTP.
 
 \subsection{Renters Who Own}
-If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a shock (e.g., an unexpected policy or treatment) that increases profits. If we consider the willingness to pay for housing function and that increases in wealth translate to smooth increases in consumption in perpetuity (implying the household's marginal propensity to consume (MPC) the perpetuity payment equals one), then consumption becomes a function of attributes of the house, such as q. So we can define WTP for renters who own,
-\begin{eqnarray*}	
-	\mathit{WTP}_t^{\mathit{owner}}&=&\mathit{WTP}(q_t,z_t,y_t(q_t)) \text{ and} \\
-	\mathit{WTP'}_t^{\mathit{owner}}&=&\mathit{WTP}(q'_t,z_t,y(q'_t)) \text{ for } t>0\\
-	&=&	\mathit{WTP}(q'_t,z_t,y+\pi_t*r) \text{ for } t>0.
+If we consider renters who also own a home (though not necessarily the one they rent), we can consider the effects on the market of increased wealth due to a shock (e.g., an unexpected policy or treatment) that increases profits. Below we use $\rho$ and $o$ superscripts to indicate the housing asset the individual rents or owns respectively. If we assume that increases in wealth due to profits from homeownership translate to smooth increases in consumption in perpetuity (implying the household's marginal propensity to consume (MPC) the perpetuity payment equals one), then consumption becomes a function of attributes of the rented and owned houses, such as $q^\rho$ and $q^o$. So we can define WTP for a renter who also own a house,
+%\begin{eqnarray*}	
+%	\mathit{WTP}_t^{\mathit{owner}}&=&\mathit{WTP}(q_t,z_t,y_t(q_t^o)) \text{ and} \\
+%	\mathit{WTP'}_t^{\mathit{owner}}&=&\mathit{WTP}(q'_t,z_t,y_t(q'_t^o)) \text{ for } t>0\\
+%	&=&	\mathit{WTP}(q'_t,z_t,y_t+\pi_0*r) \text{ for } t>0.
+%\end{eqnarray*}
+\begin{eqnarray*}
+	\mathit{WTP}_t^{\prime\mathit{owner}}&=&\mathit{WTP}(q_t^{\prime \rho},z_t^\rho,y_t^\prime)\\
+	&=&\mathit{WTP}(q_t^{\prime \rho},z_t^\rho,y_t+r*\pi^o_{\mathrm{PV}})
+	%&=&\mathit{WTP}(q_t^{\prime \rho},z_t^\rho,y_t+\Delta \pi_0^o*r) \text{ for } t>0
 \end{eqnarray*}
-Implicitly, the previous WTP measures are for renters who do not own a house.
+Where $r*\pi_{\mathrm{PV}}^o$ is the perpetual income payment from any profits associated with homeownership. Implicitly, the previous WTP measures are for renters who do not own a house.
 
-Now we can consider the marginal welfare measure for this market of renter-owners,
+Now we can consider the marginal welfare measure from an increase in the amenity at all relevant houses for a market that includes renter-owners. We start by defining a idiosyncratic and systematic component for each house's amenity, such that $q_{t}^i=\eta_{t}^i+\epsilon_t$, where the superscript, $i$, indexes the houses in a region. Next we consider a small shock to future levels of the systematic component of the amenity, $\epsilon_t$,% such that $\epsilon^\prime_t-\epsilon_{t}>0$ for $t>0$.  
 
 \begin{eqnarray}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}&=&\sum_{t>0} \frac{\partial \mathit{WTP}^{\mathit{owner}}_t}{\partial q_t}(1+r)^{-t} \nonumber\\
-	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} \nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{owner}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber\\
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}}&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q^\rho_t}*(1+r)^{-t} \nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t^o}(1+r)^{-t} \nonumber\\
 	%&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial q_t}*(1+r)^{-t}\nonumber\\
 	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
-	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}*(1+r)^{-t}\nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
+	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t^o}*(1+r)^{-t}\nonumber\\
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t}(1+r)^{-t} \nonumber
 \end{eqnarray}
-
-Next we assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
+Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
 \begin{eqnarray}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} 
-	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} \nonumber\\
-	&& + \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \label{mwtpOwner0}\nonumber\\
-	&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}|_{\partial y=0}*(1+r)^{-t} \nonumber\\
-	&& + \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*\frac{r}{1+r}*\frac{\partial P_t}{\partial q_t}(1+r)^{-t} \nonumber\\
-	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}} \label{mwtpOwner1}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
+	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}} \label{mwtpOwner1}
 \end{eqnarray}
-Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$ to connect the equations of the firm and household for the renter-owner. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the renter's experience in the rental marketplace (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
+Where we have used $\frac{\partial y_t}{\partial q_t}=\frac{\partial \pi_t}{\partial q_t}$ to connect the equations of the firm and household for the renter-owner. Next, the first term in the right hand side of \ref{mwtpOwner1} describes the experience of future renters' optimizing decisions in the rental market (whether or not they are an owner), so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1},
 
 \begin{eqnarray*}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}
 \end{eqnarray*}
 which can be rearranged to highlight the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
 \begin{equation*}
@@ -294,7 +293,19 @@ which can be rearranged to highlight the relationship between marginal willingne
 \end{equation*}
 
 
-When the renter-owner is choosing the optimal levels of $z_t$ and $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in $q$ comes as a shock to future renters' $WTP$ and consequent re-sorting, then this does affect the owner's profits. Thus the marginal price under-estimates the benefit of the amenity change to renter-owners. Importantly, because an renter-owner's decision about where to rent does not influence rent or the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Given our assumption of an MPC equal to one, pecuniary externalities do not transmit wealth effects into higher rents. To the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live.
+When the renter-owner is choosing the optimal levels of $z_t$ and $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in $q$ comes as a shock to future renters' $\mathit{WTP}$ and owners' profit  re-ordering of households and a different sorting pattern than otherwise. Thus the marginal price under-estimates the benefit of the amenity change to renter-owners. 
+
+
+
+
+
+
+
+
+
+Importantly, because an individual renter-owner's decision about where to rent does not influence rent or the profits from homeownership, the wealth impacts on price that result from this are smaller than otherwise. Given our assumption of an MPC equal to one, pecuniary externalities do not transmit wealth effects into higher rents. To the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live.
+
+
 
 \subsection{Taxes}
 It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}*\frac{1}{1+r}$. We can incorporate this into the firm's profit equation from \ref{pi1},
@@ -381,6 +392,8 @@ Additionally, quantification of the additional marginal benefits experienced by 
 Throughout this paper we have mostly ignored the methodological challenges associated with quantifying changes in WTP that dominate the literature. It seems likely to us that the way future willingness to pay, future rents, future costs, etc are capitalized into today's prices increase the challenge associated with identifying an individual's demand. At the same time, we expect that the enhanced clarity that comes from separating the renter from the owner will ultimately determine the appropriate technique for quantifying Hicksian and Marshallian measures of welfare change.
 
 We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. In the context of horizontal sorting equilibrium models for occupants of housing, the expectations of firms and households about this process are built into observed prices. Our simple model omits this information, which we expect would lead to underestimation of benefits due to underestimated costs such as moving costs. It would be interesting to extend our model to include forward looking renters to better understand the impacts of frequent moving on renters (\cite{bishop19}) 
+
+The effects on house prices and owner well-being identified in this paper suggest an import consideration in the development of sorting models such as the single cross (\cite{banzhaf20}). Enhanced amenity values in a locality, may lead to re-sorting because the affected house are relatively more valuable, a re-ordering of houses. Simultaneously, the sorting order of the households will change if some of them are owners too, as their willingness to pay may rise enough to change the ordering of households.
 
 A key assumption behind our use of the term, pecuniary externality, is that the policy in consideration is targeting households not property owners. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice. 
 
