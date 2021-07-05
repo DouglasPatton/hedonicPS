@@ -153,7 +153,7 @@ out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The pres
 Where the first term is the net revenue from rent and costs for the time period and the second term
 represents the present value (i.e., at the start of the time period, $t$) of house price returns.
 
-Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y_t)$ for that same housing unit, where $y_t$ is the renter's income. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We  assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t)$ for houses in the market. One might estimate this function using the hedonic price method and time series rent data rather than housing price data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
+Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y_t)$ for that same housing unit, where $y_t$ is the renter's income. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We  assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t,\bar{y}_t)$, that depends on characteristics of the house and the average income of the population of renters each time period, $\bar{y}_t)$. One might estimate this function using the hedonic price method and time series rent data rather than housing price data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
 
 Each time period, the consumer’s monetized benefit is:
 \begin{equation*}
@@ -164,7 +164,7 @@ to pay for a single point on the household’s demand curve for housing in time 
 \begin{equation}
 	\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} \label{foc}
 \end{equation}
-Returning to the firm, if we assume the market uses information to price houses efficiently, today’s price will equals tomorrow’s
+For the moment, we ignore the relationship between average income, willinginess to pay rent, and equilibrium rent, returning to that question when we consider home ownership below. Returning to the firm, if we assume the market uses information to price houses efficiently, today’s price will equals tomorrow’s
 price,
 \begin{equation*}
 	P_t=P_{t+1}.
@@ -279,16 +279,16 @@ Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual own
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
 	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q^o_{t>0}} \label{mwtpOwner1}.
 \end{eqnarray}
-The first term in the right hand side of \ref{mwtpOwner1} describes the renter's future optimizing decisions in the rental market, where choosing from housing options causes $q_t^\rho$ to vary, so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1}. Then we assume that the derivatives of the cost and price functions with respect to the amenity are the same for the house that the individual rents and the house they own, abstracting from the distinction between the two houses, 
+The first term in the right hand side of \ref{mwtpOwner1} describes the renter's future optimizing decisions in the rental market, where choosing from housing options causes $q_t^\rho$ to vary, so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1}. Then we assume that the derivatives of the cost and price functions with respect to the amenity are the same for the house that the individual rents and the house they own, abstracting away from the distinction between the two houses, 
 
 \begin{eqnarray*}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}.
 \end{eqnarray*}
 Rearranging the result highlights the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
-\begin{equation*}
+\begin{equation}
 	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda}\right)
-\end{equation*}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda}\right) \label{marginalPriceOwner}
+\end{equation}
 
 
 When the renter-owner is choosing the optimal level of $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in the amenity comes as a shock and affects all relevant houses, then the marginal price under-estimates the benefit of the amenity change to renter-owners. Conversely, we expect that in markets dominated by renter-owners, the marginal price over-estimates the benefits to renters who do not own. This also implies that clusters of owners may experience larger price changes as the wealth effects of increased WTP would translate to a cluster of higher prices.
@@ -321,7 +321,7 @@ Because of our assumption that rents and costs do not change due to the property
 \begin{eqnarray}
 	\Delta^T R_t&=&\Delta^T C_t+P^T_{t}\frac{g+r}{1+r}-P_{t} \frac{r}{1+r},\nonumber \\
 	0&=&0+P^T_{t}\frac{g+r}{1+r}-P_{t} \frac{r}{1+r},\nonumber \\
-	P^T_t&=& P_t\frac{r}{g+r}.\label{TxPrice}\nonumber
+	P^T_t&=& P_t\frac{r}{g+r}.\label{TxPrice} \label{Ptax}
 \end{eqnarray}
 Where $\Delta^T$ denotes the difference between the state of reality with the tax and without. As long as g and r are positive, the property tax will cause the price of the house to fall to a new equilibrium level.
 Next we can consider the change in profits during $t=0$ as a function of $g$ and $P_0$,
@@ -336,7 +336,20 @@ Given that rents do not change but the interest payments on the price of the hou
 	\Delta^T R_t&=&P^T_t\frac{g+r}{1+r}-P_t\frac{r}{1+r}\\
 	0&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}.
 \end{eqnarray*}
-The first term is the present value of the annual tax payment and the second term is the rental payment reduction due to a lower house price. The two terms exactly offset each other.
+The first term is the present value of the future annual tax payments and the second term is the present value of future reductions in rent to a lower house price. The two terms exactly offset each other, so the renter is unaffected by the property tax.
+
+Our analysis of welfare effects above do not consider the possibility that taxes already exist. Because property taxes distort the information about the occupant's preferences, it is important to correct this effect when quantifying benefits. We can return to \ref{marginalPrice} and substitute for $P_1$ using \ref{Ptax} to find the welfare effect when observed prices include adjustments to existing property taxes,
+\begin{equation}
+\frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{g+r}*\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right). \nonumber %label{marginalPriceT}
+\end{equation}
+This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits.
+
+Similarly, we can compute the necessary adjustment for owner-occupied housing where the owner experiences income effects by substituting \ref{Ptax} into \ref{marginalPriceOwner},
+\begin{equation}
+\frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{(1+\lambda)(g+r)}*\left(
+\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right) \label{marginalPriceOwnerT}
+\end{equation}
+Which illustrates that for renter-owners, the existence of property taxes and income effects 
 
 \subsection{A Corrective Tax}
 While pecuniary externalities are not an inefficiency that merits correction on the grounds of economic efficiency, political and ethical perspectives may call for such a correction. For example, a public expenditure that enhances air quality is likely designed to benefit the households in a region, regardless of whether or not they own a house. We are interested in identifying a property tax rate that can be designed to exactly offset the pecuniary externality that transfers a portion of the benefits of the amenity change from renter to owner.
@@ -512,6 +525,12 @@ Washington DC, U.S.A.: Resources for the Future.
 \textit{The Measurement Of Environmental And Resource Values: Theory And Methods}.
 Washington DC, U.S.A.: Routledge
 \endbibitem 
+
+\bibitem[\protect\citeauthoryear{Gervais}{2002}]{gervais2002}
+\textsc{Gervais, M.} (2002):
+``Housing Taxation an Capital Accumulation,''
+\textit{Journal of Monetary Economics}, 49(2002), 1461--1489.
+\endbibitem
 
 \bibitem[\protect\citeauthoryear{Hendershott and Slemrod}{1983}]{hendershott83}
 \textsc{Hendershott, P.H. and Slemrod, J.} (1983):
