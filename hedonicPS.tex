@@ -272,9 +272,9 @@ Now we can consider the marginal welfare measure from an increase in the amenity
 	%&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial q_t}*(1+r)^{-t}\nonumber\\
 	%&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t^{\mathit{renter}}}{\partial y_t}*\frac{\partial y_t}{\partial q_t}(1+r)^{-t} \nonumber
 	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t^\rho}*(1+r)^{-t}\nonumber\\
-	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t^o}(1+r)^{-t} \nonumber
+	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t^o}(1+r)^{-t} \label{mwtpOwner0}
 \end{eqnarray}
-Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
+Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect average income, equilibrium rent, and house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
 	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q^o_{t>0}} \label{mwtpOwner1}.
@@ -290,12 +290,26 @@ Rearranging the result highlights the relationship between marginal willingness 
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda}\right) \label{marginalPriceOwner}
 \end{equation}
 
+The marginal willingness to pay of renter-owners is underestimated by the implicit price from the hedonic price function due to the exclusion of income effects, but due to low home ownership rates, average income is unaffected so rent does not change and the impacts of homeownership are minimal.
 
-When the renter-owner is choosing the optimal level of $q_t$ by varying the house they rent each time period (i.e., sorting), there is no change in profits, so the tangency condition in equation \ref{foc} implied by a utility maximizing renter is not affected by ownership because the owner will be paid the same regardless of who lives in the house. However, if an increase in the amenity comes as a shock and affects all relevant houses, then the marginal price under-estimates the benefit of the amenity change to renter-owners. Conversely, we expect that in markets dominated by renter-owners, the marginal price over-estimates the benefits to renters who do not own. This also implies that clusters of owners may experience larger price changes as the wealth effects of increased WTP would translate to a cluster of higher prices.
+Conversely, we expect that in markets dominated by renter-owners, there will be a change in average income due to the increased amenity values of the houses. We can include the effect of resorting and bidding up of the rent function and rewrite the renter's first order condition, \ref{foc},
+
+\begin{equation}
+\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
+\end{equation} 
+
+We can also assume a constant share of house holds are homeowners, $\gamma$, and substitute the first order condition into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented
+
+\begin{eqnarray}
+\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}}&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}*(1+r)^{-t} \nonumber\\
+&& + \sum{t>0} \\
+&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P_{1_\mathrm{PV}}}{\partial q_t}(1+r)^{-t}
+\end{eqnarray}
+
 
 Additionally, to the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live and more so where wealth accumulates rapidly. If $\lambda$ increases with wealth, stratification would tend to be stronger.
 
-
+ 
 
 \subsection{Taxes}
 It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}*\frac{1}{1+r}$. We can incorporate this into the firm's profit equation from \ref{pi1},
@@ -342,14 +356,14 @@ Our analysis of welfare effects above do not consider the possibility that taxes
 \begin{equation}
 \frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{g+r}*\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right). \nonumber %label{marginalPriceT}
 \end{equation}
-This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits.
+This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits. This result is identical to equation 4 in \cite{niskanen77}, but our approach emphasizes the source of these values is derived from a home occupant's willingness to pay rent, while their interest is focused on including the increased value of property taxes that comprise the government's share of a home's increased equity.
 
 Similarly, we can compute the necessary adjustment for owner-occupied housing where the owner experiences income effects by substituting \ref{Ptax} into \ref{marginalPriceOwner},
 \begin{equation}
 \frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{(1+\lambda)(g+r)}*\left(
 \frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right) \label{marginalPriceOwnerT}
 \end{equation}
-Which illustrates that for renter-owners, the existence of property taxes and income effects 
+Which illustrates that for renter-owners, the existence of property taxes and income effects further divides implicit price from net marginal benefits.
 
 \subsection{A Corrective Tax}
 While pecuniary externalities are not an inefficiency that merits correction on the grounds of economic efficiency, political and ethical perspectives may call for such a correction. For example, a public expenditure that enhances air quality is likely designed to benefit the households in a region, regardless of whether or not they own a house. We are interested in identifying a property tax rate that can be designed to exactly offset the pecuniary externality that transfers a portion of the benefits of the amenity change from renter to owner.
