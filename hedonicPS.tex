@@ -248,6 +248,19 @@ Which can be rearranged to help us understand the partial derivative of the pric
 \begin{equation}
 	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}
 \end{equation}
+Where we have relied on the following relations,
+\begin{eqnarray*}
+\frac{r}{1+r}\sum_{t>0} \frac{\partial P_t}{\partial q_t}(1+r)^{-t}&=&\frac{r}{1+r}\sum_{t>0} (\frac{\partial R_t}{\partial q_t}-\frac{\partial C_t}{\partial q_t})(1+r)^{-t}\\
+&=& \frac{1}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}\\
+&=& \frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
+\end{eqnarray*}
+
+
+%\begin{eqnarray}
+%	P_0=\sum_{t>0}(R_t-C_t)(1+r)^{-t}\\
+%	P_{1_{\mathrm{PV}}}=\frac{P_1}{1+r}=\frac{P_0}{1+r}\\
+%	\frac{\partial R_t}{\partial q_t}-\frac{\partial C_t}{\partial q_t}=\frac{\partial P_t}{\partial q_t}*\frac{r}{1+r}
+%\end{eqnarray}
 If we assume that costs do not change, then we have, in present value terms, the standard tangency condition used in the static ownership literature. If marginal costs are positive (e.g., increased property taxes), then the implicit price tends to underestimate marginal WTP. On the other hand, if marginal costs are negative (e.g., reduced defensive expenditures), then the implicit price tends to overestimate marginal WTP.
 
 \subsection{Renters Who Own}
@@ -277,13 +290,14 @@ Now we can consider the marginal welfare measure from an increase in the amenity
 Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect average income, equilibrium rent, and house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
-	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \frac{\lambda}{1+r}*\frac{\partial P_1}{\partial q^o_{t>0}} \label{mwtpOwner1}.
+	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
 \end{eqnarray}
 The first term in the right hand side of \ref{mwtpOwner1} describes the renter's future optimizing decisions in the rental market, where choosing from housing options causes $q_t^\rho$ to vary, so we can solve equation \ref{marginalPrice} for marginal WTP and substitute it into the first term of \ref{mwtpOwner1}. Then we assume that the derivatives of the cost and price functions with respect to the amenity are the same for the house that the individual rents and the house they own, abstracting away from the distinction between the two houses, 
 
-\begin{eqnarray*}
-	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+\frac{1+\lambda}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}.
-\end{eqnarray*}
+\begin{equation}
+	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} =	\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}+(1+\lambda)*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o}.
+\end{equation}
+
 Rearranging the result highlights the relationship between marginal willingness to pay and marginal sale price for permanent changes in an amenity,
 \begin{equation}
 	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
@@ -298,14 +312,20 @@ Conversely, we expect that in markets dominated by renter-owners, there will be 
 \frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
 \end{equation} 
 
-We can also assume a constant share of house holds are homeowners, $\gamma$, and substitute the first order condition into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented
-
+ We also assume that increases in WTP from increases in average income translate linearly into increases in rent, 
 \begin{eqnarray}
-\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}}&=& \sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t}*(1+r)^{-t} \nonumber\\
-&& + \sum{t>0} \\
-&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P_{1_\mathrm{PV}}}{\partial q_t}(1+r)^{-t}
+\frac{\partial R_t}{\partial \bar{y}_t}=\alpha*\frac{\partial \mathit{WTP}_t}{\partial y_t}=\alpha*\lambda
 \end{eqnarray}
+Next, we assume a constant share of households are renter-owners, $\gamma$, allowing us to write,
+\begin{equation}
+	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_t}
+\end{equation}
 
+We then use substitute into \ref{focOwner}, which is then substituted into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented by a renter-owner and solving for marginal price,
+\begin{equation}
+\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
+\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda*\left( 1 + \alpha * \gamma\right)}\right) \label{marginalPriceManyOwners}
+\end{equation}
 
 Additionally, to the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live and more so where wealth accumulates rapidly. If $\lambda$ increases with wealth, stratification would tend to be stronger.
 
@@ -327,7 +347,7 @@ R^T_t=C^T_t-\frac{P^T_{t}(g+r)}{1+r}\text{ for }t>0.
 Because the tax does not influence decisions made at the margin, we assume rents and costs do not change due to the property tax. 
 
 
-The firm's profits are driven by competition to zero in subsequent years, but in year 0 the firm's profits will be non-zero due to the adjustment in price after $t=0$ that is a consequence of the tax,
+The firm's profits are driven by competition to zero in subsequent years, but in year 0 the firm's profits will be non-zero due to the adjustment in price after $t=0$ that occurs because of the tax,
 \begin{equation*}
 	\pi^T_0 = (R^T_0-C^T_0)+\left(\frac{P^T_{1}(1-g)}{1+r}-P_0\right).\label{piT0}
 \end{equation*}
@@ -350,7 +370,7 @@ Given that rents do not change but the interest payments on the price of the hou
 	\Delta^T R_t&=&P^T_t\frac{g+r}{1+r}-P_t\frac{r}{1+r}\\
 	0&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}.
 \end{eqnarray*}
-The first term is the present value of the future annual tax payments and the second term is the present value of future reductions in rent to a lower house price. The two terms exactly offset each other, so the renter is unaffected by the property tax.
+The first term is the present value of the future annual tax payments and the second term is the present value of future reductions in rent due to a lower house price. The two terms exactly offset each other, so the renter is unaffected by the property tax.
 
 Our analysis of welfare effects above do not consider the possibility that taxes already exist. Because property taxes distort the information about the occupant's preferences, it is important to correct this effect when quantifying benefits. We can return to \ref{marginalPrice} and substitute for $P_1$ using \ref{Ptax} to find the welfare effect when observed prices include adjustments to existing property taxes,
 \begin{equation}
