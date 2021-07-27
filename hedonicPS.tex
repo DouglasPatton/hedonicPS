@@ -127,11 +127,13 @@ Investigations of pecuniary externalities in environmental economics often focus
 
 
 \subsection{Environmental Justice} 
-\cite{mohai09} broadly review the history of Environmental Justice, including both academic attention and societal attention to the topic. Much of the focus is on the intersection of race, poverty, and toxic waste disposal. Several of the sources they review illustrate a growing awareness of pollution and a consequent push by more affluent, whiter populations to maintain their own local environmental quality.  \cite{aaronson2021} discuss redlining and the consequent lack of access to credit and disinvestment in black neighborhoods that began in the 1930's and which continue to negatively affect a variety of measures of well-being for occupants of those neighborhoods.
-Environmental Justice concerns and the search for causal connections face many challenges due to the numerous connections and feedback effects, as exemplified by the pyramid of environmental gentrification (\cite{banzhafJustice19}). \cite{banzhafJustice19} provide an overview of environmental justice in a spatial context that focuses on the use of hedonic price modeling for revealing preferences and disentangling the mechanisms that expose lower income households to higher levels of pollution. The same authors also recognize that For example, improved environmental quality can lead to gentrification, displacing lower income households that tend to rent rather than own their homes. 
-In addition to the income effects of housing appreciation described in this paper, homeownership carries other benefits such as income tax deductions for mortgage payments and a lack of taxation of imputed rent income. These policies create incentives for homeowners to overconsume housing, Over cand for the stock of rental housing to be smaller than otherwise \cite{gervais2002}. Overconsumption of housing also tends to increase greenhouse gas emissions, creating feedback effects. 
+\cite{mohai09} broadly review the history of Environmental Justice, including both academic attention and societal attention to the topic. Much of the focus is on the intersection of race, poverty, and toxic waste disposal. Several of the sources they review illustrate a growing awareness of pollution and a consequent push by more affluent, whiter populations to maintain their own local environmental quality.  \cite{aaronson2021} discuss redlining and the consequent lack of access to credit and disinvestment in black neighborhoods that began in the 1930's and which continue to negatively affect a variety of measures of well-being for occupants of those neighborhoods. \cite{gervais2002} found that favorable tax treatment of homeowners encourages them to over consume housing at the expense of the stock of rental housing. This evidence suggests that favorable treatment of homeowners relative to landlords in the tax code may compound the negative effects of low home ownership rates.
 
- 
+In the context of applying the hedonic price method to residential real estate, environmental justice concerns and the search for causal connections face many challenges due to the numerous connections and feedback effects, as exemplified by the pyramid of environmental gentrification (\cite{banzhafJustice19}). \cite{banzhafJustice19} provide an overview of environmental justice in a spatial context that focuses on the use of hedonic price modeling for revealing preferences and disentangling the mechanisms that expose lower income households to higher levels of pollution. The same authors also recognize that For example, improved environmental quality can lead to gentrification, displacing lower income households that tend to rent rather than own their homes. 
+
+Environmental justice concerns discussed in the recent executive order 14008 of Jan 27, 2021 discusses communities as the target of restorative justice, suggesting that concerns about environmental gentrification should be reflected in policy design. \cite{curran12} describe a "just green enough" approach to enhancements in environmental quality that lead to reduced environmental gentrification by targeting enhancements at current residential and industrial occupants rather than new developments that tend to be "parks, cafes, and a riverwalk". \cite{wolch14} advocate for increased adoption of "just green enough" approaches to public enhancements of environmental quality after reviewing the literature on environmental gentrification in the US and China and concluding that displacement of working-class communities is a broadly relevant, ongoing concern. 
+
+
 
 
 
@@ -139,21 +141,18 @@ In addition to the income effects of housing appreciation described in this pape
 
 \section{Theoretical Model}
 \subsection{Owners and Renters}
-In this section, we develop a dynamic model of profit maximizing firms that buy and sell units of housing in an asset market and utility maximizing households who rent units of housing in a rental market. Each unit of housing is a bundle of attributes, $z$, and a separate attribute, $q$, of primary interest which we might imagine is an environmental amenity such as clean air. We assume that the asset and rental markets are each in a competitive equilibrium and that participants have complete information, aside from any unexpected shocks.
+In this section, we develop a dynamic model of a typical profit maximizing firm that buys and sells units of housing in an asset market and a typical utility maximizing households who rent units of housing in a rental market. Each unit of housing is a bundle of attributes, $z$, and a separate attribute, $q$, of primary interest which we might imagine is an environmental amenity such as clean air. We assume that the asset and rental markets are each in a competitive equilibrium and that participants have complete information, aside from any unexpected shocks.
 
-We assume that the household is maximizing a utility function constrained by their budget and conditional on prices and income, and we assume that there is a corresponding indirect utility function. The households optimization problem is over a set of houses with continuously variable attributes, leading to the outcome where each household's marginal willingness to pay for an attribute is equal to the implicit rental price of that housing attribute for each time period, as will be discussed below.
+Our approach follows the standard hedonic approach (e.g., \cite{rosen74}) to consumer decision making, but rather than being motivated by the price or user cost of homeownership, the consumer or household in our model decides where to rent. We assume that when deciding where to live each time period, the household is maximizing a utility function constrained by their budget and conditional on prices and income. Competing with similar demanders of housing over a set of houses with continuously variable attributes leads to an equilibrium market outcome where each household's marginal willingness to pay for an attribute is equal to the implicit rental price of that housing attribute. 
 
-The firm and the household make decisions at each time period to buy/sell and to rent. We focus our analysis on a typical housing unit which may be owned and rented by different firms and households each year. 
-The household and the firm interact at the beginning of each time period when the household pays rent. The transaction is the result of the household maximizing the present value of their utility. Included in the household's first order conditions would be the  
-The firm purchases a house at time $t$ for $P_t$ borrowed at interest rate $r$. Later, at $t+1$, the firm sells the house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$. After purchasing the house, the firm rents
-out the unit of housing to a household for, $R_t$ and pays costs $C_t$. The present value of the firm’s profit for a single time period will be,
+At the start of each time period, $t$, the firm purchases a house for $P_t$ which is borrowed at interest rate $r$. After purchasing the house, the firm rents out the unit of housing to a household for, $R_t$ and pays costs $C_t$. Later, at $t+1$, the firm sells the house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$.  The present value of the firm’s profit for a single time period will be,
 \begin{equation}
 	\pi_t = (R_t-C_t)+\left(\frac{P_{t+1}}{1+r}-\frac{P_t(1+r)}{1+r}\right).\label{pi1}
 \end{equation}
 Where the first term is the net revenue from rent and costs for the time period and the second term
 represents the present value (i.e., at the start of the time period, $t$) of house price returns.
 
-Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y_t)$ for that same housing unit, where $y_t$ is the renter's income. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We  assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t,\bar{y}_t)$, that depends on characteristics of the house and the average income of the population of renters each time period, $\bar{y}_t)$. One might estimate this function using the hedonic price method and time series rent data rather than housing price data, though as we will show this is not necessary and house prices can be used to quantify the welfare impacts of a policy or treatment. 
+Over the same time period, a household rents the house for $R_t$ and has a willingness to pay for housing, $\mathit{WTP}_t=\mathit{WTP}(q_t,z_t,y_t)$ for that same housing unit, where $y_t$ is the renter's income. For simplicity in our mathematical exposition, we assume that consumers have identical WTP functions conditional on income and housing attributes. We  assume that there is an equilibrium rent function, $R_t=R(q_t,z_t,P_t,C_t,\bar{y}_t)$, that depends on characteristics of the house and the average income of the population of renters each time period, $\bar{y}_t)$. One might estimate this function using the hedonic price method and time series rent data rather than housing price data, though as we will show this is not necessary because house prices can be used to quantify the welfare impacts of a policy or treatment that fundamentally affects the consumers in the rental market. 
 
 Each time period, the consumer’s monetized benefit is:
 \begin{equation*}
@@ -246,16 +245,14 @@ We are ultimately interested in understanding the relationship between price cha
 \end{eqnarray}
 Which can be rearranged to help us understand the partial derivative of the price function,
 \begin{equation}
-	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}
+	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}.
 \end{equation}
-Where we have relied on the following relations,
-\begin{eqnarray*}
-\frac{r}{1+r}\sum_{t>0} \frac{\partial P_t}{\partial q_t}(1+r)^{-t}&=&\frac{r}{1+r}\sum_{t>0} (\frac{\partial R_t}{\partial q_t}-\frac{\partial C_t}{\partial q_t})(1+r)^{-t}\\
-&=& \frac{1}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}\\
-&=& \frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
-\end{eqnarray*}
-
-
+%Where we have relied on the following relations,
+%\begin{eqnarray*}
+%\frac{r}{1+r}\sum_{t>0} \frac{\partial P_t}{\partial q_t}(1+r)^{-t}&=&\frac{r}{1+r}\sum_{t>0} (\frac{\partial R_t}{\partial q_t}-\frac{\partial C_t}{\partial q_t})(1+r)^{-t}\\
+%&=& \frac{1}{1+r}*\frac{\partial P_1}{\partial q_{t>0}}\\
+%&=& \frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
+%\end{eqnarray*}
 %\begin{eqnarray}
 %	P_0=\sum_{t>0}(R_t-C_t)(1+r)^{-t}\\
 %	P_{1_{\mathrm{PV}}}=\frac{P_1}{1+r}=\frac{P_0}{1+r}\\
@@ -306,13 +303,18 @@ Rearranging the result highlights the relationship between marginal willingness 
 
 The marginal willingness to pay of renter-owners is underestimated by the implicit price from the hedonic price function due to the exclusion of income effects, but due to low home ownership rates, average income is unaffected so rent does not change and the impacts of homeownership are minimal.
 
-Conversely, we expect that in markets dominated by renter-owners, there will be a change in average income due to the increased amenity values of the houses. We can include the effect of resorting and bidding up of the rent function and rewrite the renter's first order condition, \ref{foc},
+Conversely, we expect that in markets with a substantial number of renter-owners, there will be a change in average income due to the increased amenity values of the houses. We can include the effect of resorting and bidding up of the rent function and rewrite the renter's first order condition,
 
 \begin{equation}
-\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
+\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focRenter}
+\end{equation} 
+At the same time, the renter-owner's optimal equilibrium behavior would be described by a first order condition including the income effects that would be generated during the sorting implied  by equilibrium,
+%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
+\begin{equation}
+\frac{\partial \mathit{WTP}_t}{\partial q_t}+\lambda*r*=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
 \end{equation} 
 
- We also assume that increases in WTP from increases in average income translate linearly into increases in rent, 
+Next, we assume that increases in WTP from increases in average income translate linearly into increases in rent proportional to willingness to pay, 
 \begin{eqnarray}
 \frac{\partial R_t}{\partial \bar{y}_t}=\alpha*\frac{\partial \mathit{WTP}_t}{\partial y_t}=\alpha*\lambda
 \end{eqnarray}
@@ -528,6 +530,14 @@ Statistic",''
 ``Does Air Quality Matter? Evidence from the Housing Market,''
 \textit{The Journal of Political Economy}, 113(2), 376--424.
 \endbibitem
+
+ 
+\bibitem[\protect\citeauthoryear{Curran and Hamilton}{2012}]{curran12}
+\textsc{Curran, W. and Hamilton, T.} (2012):
+``Just Green Enough: Contesting Environmental Gentrification in Greenpoint, Brooklyn,''
+\textit{TLocal Environment}, 17(9), 1027--1042.
+\endbibitem
+
  
 \bibitem[\protect\citeauthoryear{Dávila and Korinek}{2018}]{davila18}
 \textsc{Dávila, E. and Korinek, A.} (2018):
@@ -652,6 +662,15 @@ Washington DC, U.S.A.: Routledge
 ``Gross rents and market values: testing the implications of Tiebout's hypothesis,''
 \textit{Journal of Urban Economics}, 7(1), 102-118.
 \endbibitem
+
+
+\bibitem[\protect\citeauthoryear{Wolch, Byrne, and Newell}{2014}]{wolch14}
+\textsc{Wolch, J. R., Byrne, J., and Newell, J. P.} (2014):
+``Urban Green Space, Public Health, and Environmental Justice: The Challenge of Making Cities ‘Just Green Enough’,''
+\textit{Landscape and Urban Planning}, 125(2014)), 234--244.
+\endbibitem
+
+
 
 \bibitem[\protect\citeauthoryear{Zabel and Kiel}{2000}]{zabelkiel00}
 \textsc{Zabel, J.E., Kiel, K.E.} (2000):
