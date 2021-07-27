@@ -180,8 +180,7 @@ Further, we assume arbitrage in the asset market leads to a steady-state with $\
 \end{equation*}
 Which says that over a time period rent is equal to costs during the time period plus the present value of
 the interest payment on the cost of the house as capital. If rent were lower than this value, profits
-would be negative, firms would exit, house prices would fall, and the interest payments and other costs
-would decline until profits were no longer negative.
+would be negative, firms would exit, house prices would fall, and the interest payments would decline until profits were no longer negative.
 
 For each housing unit we can characterize the total welfare, $W_t$ associated with a firm owning and a household renting a house for a time period,
 \begin{eqnarray*}
@@ -212,7 +211,7 @@ The difference between the treated and untreated states for the producer is zero
 \begin{equation}
 	\Delta\pi_0=\frac{P^\prime_1-P_0}{1+r}=\frac{\Delta P_1}{1+r}.\label{pitzero}
 \end{equation}
-In the context of competitive markets for conventional goods like corn, the existence of profits would attract competition, boosting supply, leading to a lower equilibrium price of corn along with more production, more consumption, and more consumer surplus. However due to zoning and fundamental constraints to free entry in land markets, the profits are capitalized into the price of the real estate, and in most log-transformed empirical applications, the implicit prices of all bundled characteristics including the amenity in question increase.
+In the context of competitive markets for conventional goods like corn, the existence of profits from enhanced production would attract competition, boosting supply, leading to a lower equilibrium price of corn along with more production, more consumption, and more consumer surplus. However due to zoning and fundamental constraints to free entry in land markets, the profits are capitalized into the price of the real estate. In many log-transformed empirical applications, the implicit prices of all bundled characteristics including the amenity in question increase.
 Now we can calculate the present value of the change in total welfare due to the treatment,
 \begin{eqnarray}
 	\Delta W_{\mathrm{PV}}&=&\Delta \pi_0+\sum_{t>0}\Delta w_t(1+r)^{-t}\nonumber\\
@@ -311,7 +310,7 @@ Conversely, we expect that in markets with a substantial number of renter-owners
 At the same time, the renter-owner's optimal equilibrium behavior would be described by a first order condition including the income effects that would be generated during the sorting implied  by equilibrium,
 %\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
 \begin{equation}
-\frac{\partial \mathit{WTP}_t}{\partial q_t}+\lambda*r*=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
+\frac{\partial \mathit{WTP}_t}{\partial q_t}+\lambda*r*\frac{\partial P_{1_{\mathrm{PV}}}}{\partial q_{t>0}}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
 \end{equation} 
 
 Next, we assume that increases in WTP from increases in average income translate linearly into increases in rent proportional to willingness to pay, 
@@ -320,7 +319,7 @@ Next, we assume that increases in WTP from increases in average income translate
 \end{eqnarray}
 Next, we assume a constant share of households are renter-owners, $\gamma$, allowing us to write,
 \begin{equation}
-	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_t}
+	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
 \end{equation}
 
 We then use substitute into \ref{focOwner}, which is then substituted into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented by a renter-owner and solving for marginal price,
@@ -450,7 +449,7 @@ While we have focused on single family homes in the development of our model, th
 
 
 
-Extending the work of \cite{kanemoto88} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be another interesting extension of this work.
+A number of expansions of the theoretical model presented here can be developed to better accomodate empirical applciations. Future work may quantify how ownership effects induce sorting and segregation in the absence of distinct preferences (i.e., Tiebout sorting). Extensions similar to \cite{bishop19} might be used to modify the consumer's first order condition to assess how forward looking consumers respond to varying ammenity levels or moving costs when choosing the optimal home to rent.  Extending the work of \cite{kanemoto88} to distinguish between renter-owners and renters in a dynamic, general equilibrium framework would be another interesting extension of this work. Similarly, the analysis of \cite{gervais2002} might be modified to incorporate income effects and multiplier effects associated with groups of asset buying households who bid up each other's housing prices. And finally, incorporating price inflation and the distinct tax treatments of owner-occupied  houses (e.g., \cite{poterba84}) into this model will help clarify the full benefits and consequences of homeownership (or a lack thereof), providing a useful means of anticipating and offsetting environmental injustice.
 
 \section{Conclusions}
 The contributions in this paper provide a foundation for identifying and rectifying past social injustices. In this paper, we demonstrate how the fundamentally monopolistic nature of land gives rise to pecuniary externalities that allow landowners to take public goods like air quality and sell them in a private rental market. For renter occupants, permanent enhancements to public goods increase rent and transfer the bulk of measurable benefits to landowners as increased rents in perpetuity. Simultaneously, user costs consume these increased rents, but landowners enjoy an instantaneous increase in wealth. 
