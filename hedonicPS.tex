@@ -96,7 +96,7 @@ To address a lack of attention to the welfare effects of house price returns gen
 
 %\caps{Economic assessments of} ecosystem service values frequently focus on quantifying the direct economic benefits to households or consumers of changes to ecosystems. Revealed preference techniques such as the hedonic price method quantify ecosystem service benefits by using information about observed market prices paid by consumers for either a privately traded ecosystem service or a privately traded good consumed alongside public ecosystem services. Because of the connection between ecosystem services and private markets, ecosystem services benefit both consumers and firms. Additionally, applications of these techniques to residential housing services utilize asset prices rather than rental prices, a 
 
-The conflation of the housing rental market with the housing asset market conceals the distribution of benefits between home owners and home renters. The consequence of this conflation is that the economic benefits of public projects are enjoyed to a much greater extent by the asset owners relative to the consumers than standard analyses typically imply. \cite{kuminoffpope14} say in their opening paragraph, "Homebuyers implicitly purchase the right to consume a bundle of local public goods when they buy a house." In the context of our analysis we would rephrase this as, "Homebuyers implicitly purchase the right to \textit{rent out} a bundle of local public goods when they buy a house."
+A key result of our work is that the conflation of the housing rental market with the housing asset market conceals the distribution of benefits between home owners and home renters. The consequence of this conflation is that the economic benefits of public projects are enjoyed to a much greater extent by the asset owners than the asset users than standard analyses typically imply. \cite{kuminoffpope14} say in their opening paragraph, "Homebuyers implicitly purchase the right to consume a bundle of local public goods when they buy a house." In the context of our analysis we would rephrase this as, "Homebuyers implicitly purchase the right to \textit{rent out} a bundle of local public goods when they buy a house."
 
 In this paper, we contribute to the literature on the hedonic price method by developing a dynamic model of consumers and firms that includes competitive equilibria in an asset market and a closely related rental market. Our dynamic modeling approach emphasizes the adjustment process that follows shocks affecting residential real estate such as unexpected improvements in environmental amenities. Importantly, we develop a theoretical model that uses equilibrium in the rental market to reveal consumer preferences for housing amenities, which is in contrast to the common static approach that uses the price of the housing asset. Nonetheless, we derive measures of total welfare change based on the price of the housing asset that are consistent with the static literature (e.g., \cite{freeman99} and \cite{freeman14}). In the existing literature, much attention has been paid to estimating households' willingness to pay for improvements in environmental amenities as owner-occupants, though this assumption is often implicit. The increased granularity of our approach highlights the distributional consequences of improving hedonic assets such as housing, particularly for the approximately one third of households in the United States who rent and do not own. 
 
@@ -123,9 +123,9 @@ A variety of theoretical dynamic models have been developed for hedonic analysis
 
 \subsection{External Economies} 
 
-In Economics, pecuniary and technological externalities have been defined to characterize interactions among market as well as political participants (\cite{holcombe01}). \cite{scitovsky54} discussed external economies in the context of industrial organization, distinguishing between technological and pecuniary externalities. \cite{buchananstubblebine} generalized technological externalities to include consumers. Technological externalities have a directly impact on an external party other than through prices; the numerous, rippling consequences of price changes are pecuniary externalities. \cite{holcombe01} suggest that because pecuniary externalities do not result in economic inefficiency, the associated losses and gains have received much less attention. The direct mentions of pecuniary externalities in recent literature (e.g., \cite{davila18}) are largely confined to macroeconomic discussions related to investment and finance. 
+In Economics, pecuniary and technological externalities have been defined to characterize interactions among market participants as well as political participants (\cite{holcombe01}). \cite{scitovsky54} discussed external economies in the context of industrial organization, distinguishing between technological and pecuniary externalities. \cite{buchananstubblebine} generalized technological externalities to include consumers. Technological externalities have a directly impact on an external party other than through prices; the numerous, rippling consequences of price changes are pecuniary externalities. \cite{holcombe01} suggest that because pecuniary externalities do not result in economic inefficiency, the associated losses and gains have received much less attention. The direct mentions of pecuniary externalities in recent literature (e.g., \cite{davila18}) are largely confined to macroeconomic discussions related to investment and finance. 
 
-Investigations of pecuniary externalities in environmental economics often focus on indirect effects. The debate over the indirect effects of biofuel subsidies provides a template for considering some of the ways relative price changes may be included in policy design. \cite{zilberman11} examine the impact of biofuel subsidies on indirect land use change through increased food prices, and they begin by noting the validity of considering pecuniary externalities in policy design. In \cite{zilberman11} and other studies such as \cite{zilberman13} a similar group of authors cast doubt on the inclusion of indirect land use change in biofuel subsidy planning largely because of the myriad other indirect effects also left out.
+Investigations of pecuniary externalities in environmental economics often focus on indirect effects. The debate over the indirect effects of biofuel subsidies provides a complex example of the deliberations over the ways relative price changes may be included in policy design. \cite{zilberman11} examine the impact of biofuel subsidies on indirect land use change through increased food prices, and they begin by noting the validity of considering pecuniary externalities in policy design. In \cite{zilberman11} and other studies such as \cite{zilberman13} a similar group of authors cast doubt on the inclusion of indirect land use change in biofuel subsidy planning largely because of the myriad other indirect effects also left out.
 
 
 
@@ -233,7 +233,7 @@ Returning to our measure of welfare change in equation \ref{deltaW1}, we can sub
 	\Delta W_{\mathrm{PV}}&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} \left(\Delta \mathit{WTP}_t-\left(\Delta C_t+\Delta P_t \left(\frac{r}{1+r}\right)\right)\right)(1+r)^{-t} \nonumber\\
 	%&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta C_t)(1+r)^{-t}-\Delta P_1 \sum_{t>0}  \left(\frac{r}{1+r}\right)(1+r)^{-t}\nonumber\\
 	&=&\frac{\Delta P_1}{1+r}+\sum_{t>0} (\Delta \mathit{WTP}_t-\Delta C_t)(1+r)^{-t}-\frac{\Delta P_1}{1+r}\nonumber\\
-	&=&\Delta \mathit{WTP}_{\mathrm{PV}}-\Delta C_{\mathrm{PV}} \label{deltaW2}
+	&=&\Delta \mathit{WTP}_{\mathrm{PV}}-\Delta C_{\mathrm{PV}}\nonumber %\label{deltaW2}
 \end{eqnarray}
 Which is the dynamic counterpart to the usual welfare measure (e.g., \cite{freeman14}). It is important to note that this measure does not convey the imbalanced flow of benefits to the owner and the renter. Indeed, because the public policy that improved the amenity was targeting consumers who would directly benefit, it is a pecuniary externality that competition among renters allows the homeowner to capture a large share of the benefits through rising rent that propels a rising asset value.
 
@@ -286,7 +286,7 @@ Now we can consider the marginal welfare measure from an increase in the amenity
 	&=&\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial q_t^\rho}*(1+r)^{-t}\nonumber\\
 	&& +\sum_{t>0}\frac{\partial \mathit{WTP}_t}{\partial y_t}*r*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_t^o}(1+r)^{-t} \label{mwtpOwner0}
 \end{eqnarray}
-Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not affect average income, equilibrium rent, and house prices. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
+Where $P^o_{1_\mathrm{PV}}$ is the present value of the house the individual owns at the start of $t=1$. Next we assume for the moment that the number of renter-owners is small, so their actions do not lead to indirect effects (\cite{banzhaf21}) elsewhere in the housing market such as through increased average income. We also assume $\partial \mathit{WTP}_t/\partial y_t=\lambda$, where $\lambda$ is constant over time, allowing us to write,
 \begin{eqnarray}
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial \epsilon_{t>0}} 
 	&=&\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
@@ -303,37 +303,35 @@ Rearranging the result highlights the relationship between marginal willingness 
 	\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda}\right) \label{marginalPriceOwner}
 \end{equation}
 
-The marginal willingness to pay of renter-owners is underestimated by the implicit price from the hedonic price function due to the exclusion of income effects, but due to low home ownership rates, average income is unaffected so rent does not change and the impacts of homeownership are minimal.
+The marginal willingness to pay of renter-owners is underestimated by the implicit price from the hedonic price function due to the exclusion of income effects. Otherwise, due to our assumption of low home ownership rates, average income is unaffected so rent does not change and the impacts of homeownership are minimal. 
 
-Conversely, we expect that in markets with a substantial number of renter-owners, there will be a change in average income due to the increased amenity values of the houses. We can include the effect of resorting and bidding up of the rent function and rewrite the renter's first order condition,
+%Conversely, we expect that in markets with a substantial number of renter-owners, there will be a change in average income due to the increased amenity values of the houses. We can include the effect of resorting and bidding up of the rent function and rewrite the renter's first order condition,
+%
+%\begin{equation}
+%\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focRenter}
+%\end{equation} 
+%At the same time, the renter-owner's optimal equilibrium behavior would be described by a first order condition including the income effects that would be generated during the sorting implied  by equilibrium,
+%%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
+%\begin{equation}
+%\frac{\partial \mathit{WTP}_t}{\partial q_t}+\lambda*r*\frac{\partial P_{1_{\mathrm{PV}}}}{\partial q_{t>0}}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
+%\end{equation} 
+%
+%Next, we assume that increases in WTP from increases in average income translate linearly into increases in rent proportional to willingness to pay, 
+%\begin{eqnarray}
+%\frac{\partial R_t}{\partial \bar{y}_t}=\alpha*\frac{\partial \mathit{WTP}_t}{\partial y_t}=\alpha*\lambda
+%\end{eqnarray}
+%Next, we assume a constant share of households are renter-owners, $\gamma$, allowing us to write,
+%\begin{equation}
+%	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
+%\end{equation}
+%
+%We then use substitute into \ref{focOwner}, which is then substituted into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented by a renter-owner and solving for marginal price,
+%\begin{equation}
+%\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
+%\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda*\left( 1 + \alpha * \gamma\right)}\right) \label{marginalPriceManyOwners}
+%\end{equation}
 
-\begin{equation}
-\frac{\partial \mathit{WTP}_t}{\partial q_t}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focRenter}
-\end{equation} 
-At the same time, the renter-owner's optimal equilibrium behavior would be described by a first order condition including the income effects that would be generated during the sorting implied  by equilibrium,
-%\frac{\partial \mathit{WTP_{\mathrm{PV}}}}{\partial q^\rho_{t>0}} + \lambda*\frac{\partial P^o_{1_\mathrm{PV}}}{\partial q_{t>0}^o} \label{mwtpOwner1}.
-\begin{equation}
-\frac{\partial \mathit{WTP}_t}{\partial q_t}+\lambda*r*\frac{\partial P_{1_{\mathrm{PV}}}}{\partial q_{t>0}}=\frac{\partial R_t}{\partial q_t} + \frac{\partial R_t}{\partial \bar{y}_t}*\frac{\partial \bar{y}_t}{\partial q_t}\\ \label{focOwner}
-\end{equation} 
 
-Next, we assume that increases in WTP from increases in average income translate linearly into increases in rent proportional to willingness to pay, 
-\begin{eqnarray}
-\frac{\partial R_t}{\partial \bar{y}_t}=\alpha*\frac{\partial \mathit{WTP}_t}{\partial y_t}=\alpha*\lambda
-\end{eqnarray}
-Next, we assume a constant share of households are renter-owners, $\gamma$, allowing us to write,
-\begin{equation}
-	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
-\end{equation}
-
-We then use substitute into \ref{focOwner}, which is then substituted into \ref{mwtpOwner0}, again abstracting from any difference in the house owned and rented by a renter-owner and solving for marginal price,
-\begin{equation}
-\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\left(
-\frac{\partial \mathit{WTP}^{\mathit{owner}}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right)\left(\frac{1}{1+\lambda*\left( 1 + \alpha * \gamma\right)}\right) \label{marginalPriceManyOwners}
-\end{equation}
-
-Additionally, to the extent that the MPC is below one and households do accumulate wealth, we expect wealth effects to drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}), particularly in locations where renter-owners tend to live and more so where wealth accumulates rapidly. If $\lambda$ increases with wealth, stratification would tend to be stronger.
-
- 
 
 \subsection{Taxes}
 It can be useful to separate taxes out as a component of costs to consider how changes in property tax rates impact renters and owners. Assume firms pay a property tax, $T_t$ at the end of each time period on $P_{t+1}$, where to $T_t=g*P_{t+1}*\frac{1}{1+r}$. We can incorporate this into the firm's profit equation from \ref{pi1},
@@ -380,7 +378,7 @@ Our analysis of welfare effects above do not consider the possibility that taxes
 \begin{equation}
 \frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{g+r}*\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right). \nonumber %label{marginalPriceT}
 \end{equation}
-This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits. This result is identical to equation 4 in \cite{niskanen77}, but our approach emphasizes the source of these values is derived from a home occupant's willingness to pay rent, while their interest is focused on including the increased value of property taxes that comprise the government's share of a home's increased equity.
+This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits. This result is identical to equation 4 in \cite{niskanen77}, but our approach emphasizes the source of these values is derived from a home occupant's willingness to pay rent, while their interest is focused on including in welfare assessments the increased value of property taxes that comprise the government's share of a home.
 
 Similarly, we can compute the necessary adjustment for owner-occupied housing where the owner experiences income effects by substituting \ref{Ptax} into \ref{marginalPriceOwner},
 \begin{equation}
@@ -438,6 +436,8 @@ The scope of a property owner's legal rights is an important component of evalua
 
 We emphasize that the capitalized values related to housing, e.g., the price of the house, are the result of expected interactions between households and firms with probabilities of buying/selling and renting/moving that are generally strictly between zero and one. The non-zero probability of moving that renters face each time period is built into consumer decision making and is thus reflected by housing prices. In the context of horizontal sorting equilibrium models for occupants of housing, the expectations of firms and households about this process are built into observed prices. Our simple model omits this information, which we expect would lead to underestimation of benefits due to underestimated costs such as moving costs. It would be interesting to extend our model to include forward looking renters (e.g., \cite{bishop19}) to better understand the impacts of frequent moving on renters and to assess the comparative benefit to owners.  
 
+Additional modifications of our theoretical model are necessary to accommodate sorting patterns that would likely emerge following income stratification across groups of renters who own and those who do not own. Additional stratification between owners and non-owners may also occur to the extent that some owners have a MPC below one, allowing households to accumulate wealth. We expect that in neighborhoods with high ownership rates and where households accumulate  wealth, that increased WTP and sorting will drive up rent and house prices in a pattern analogous to multiplier effects in short-run macroeconomic analysis (\cite{samuelson39}). If $\lambda$ increases with wealth, stratification would tend to be stronger.
+
 The effects on house prices and owner well-being identified in this paper suggest an import consideration in the development of sorting models such as the single cross (\cite{banzhaf20}). Enhanced amenity values in a locality, may lead to re-sorting because the affected house are relatively more valuable, a re-ordering of houses. Simultaneously, the sorting order of the households will change if some of them are owners too, as their willingness to pay may rise enough to change the ordering of households. Furthermore, if higher income households tend to live in areas with the highest concentration of homeownership, multiple sub-populations of homeowners and homes may arise without any underlying difference in preferences. Alternatively, if households have already segregated based on ownership, sorting may be mature and household ordering may be stable.
 
 A key assumption behind our use of the term, pecuniary externality, is that the policy in consideration is targeting households not property owners. While property taxes are familiar, subsidies targeting renters are uncommon, likely because they would effectively be an amenity that would be captured by the owner. A lump sum transfer to all resident in the affected region of the total tax receipt divided across all houses would be one approach to paying out the subsidy to renters. Renters in low-rent housing, who are likely to have a high marginal utility of income and a high marginal propensity to consume would also receive a larger subsidy than their landlords would pay in property taxes, a potential path toward restorative justice. 
@@ -487,6 +487,11 @@ Statistic",''
 \textit{International Economic Review}, 61(2), 973--1000.
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Banzhaf}{2021}]{banzhaf21}
+\textsc{Banzhaf, H.S.} (2021):
+``Difference-in-Differences Hedonics,''
+\textit{Journal of Political Economy}, 129(8), 2385--2414.
+\endbibitem
 
 \bibitem[\protect\citeauthoryear{Banzhaf, Ma, and Timmins}{2019}]{banzhafJustice19}
 \textsc{Banzhaf, S., Ma, L. and Timmins, C.} (2019):
