@@ -372,13 +372,13 @@ Given that rents do not change but the interest payments on the price of the hou
 	\Delta^T R_t&=&P^T_t\frac{g+r}{1+r}-P_t\frac{r}{1+r}\\
 	0&=&P^T_t\frac{g}{1+r}-(P_t-P_t^T)\frac{r}{1+r}.
 \end{eqnarray*}
-The first term is the present value of the future annual tax payments and the second term is the present value of future reductions in rent due to a lower house price. The two terms exactly offset each other, so the renter is unaffected by the property tax.
+The first term is the present value of the future annual tax payments and the second term is the present value of future reductions in rent due to a lower house price. The two terms exactly offset each other.
 
 Our analysis of welfare effects above do not consider the possibility that taxes already exist. Because property taxes distort the information about the occupant's preferences, it is important to correct this effect when quantifying benefits. We can return to \ref{marginalPrice} and substitute for $P_1$ using \ref{Ptax} to find the welfare effect when observed prices include adjustments to existing property taxes,
 \begin{equation}
-\frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{g+r}*\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right). \nonumber %label{marginalPriceT}
+\frac{\partial P^T_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{r}{g+r}*\left(\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}}\right). \label{marginalPriceT}
 \end{equation}
-This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits. This result is identical to equation 4 in \cite{niskanen77}, but our approach emphasizes the source of these values is derived from a home occupant's willingness to pay rent, while their interest is focused on including in welfare assessments the increased value of property taxes that comprise the government's share of a home.
+This equation tells us that in the presence of existing property taxes, marginal implicit prices should be scaled up by the ratio $\frac{g+r}{r}$ when measuring net marginal benefits because price changes only measure the private benefit of the increased rents paid by renters. This result is identical to equation 4 in \cite{niskanen77}, but our approach emphasizes the source of these values is derived from a home occupant's willingness to pay rent, while their interest is focused on including in welfare assessments the increased value of property taxes that comprise the government's share of a home.
 
 Similarly, we can compute the necessary adjustment for owner-occupied housing where the owner experiences income effects by substituting \ref{Ptax} into \ref{marginalPriceOwner},
 \begin{equation}
@@ -425,6 +425,8 @@ Using \ref{gcorrect} we can estimate a corrective property tax rate of $g\approx
 or \$2.13 billion 
 %(.028*.03)/(1+.03-.028)*86900*1.54*19
 , respectively. The average property tax increase would also be the average annual subsidy per household that the tax could fund. 
+
+Using the result in \ref{marginalPriceT}, we can also correct willingness to pay estimates for existing property taxes that reduce the private sale price of the house relative to the marginal benefits by the ratio $\frac{r}{g+r}$. To estimate the present value of the change in willingness to pay in the presence of existing property taxes, we assume a nominal property tax rate of $g=2\%$, and at $r=5\%$ or $r=3\%$, the private sale price should be scaled up by the factors $1.66$ or $1.4$, respectively. This suggests that the aggregate benefits estimated by \cite{chaygreenstone05} are substantially higher than the value of the privately owned portion of a house indicates. For renters, the increase in present and future rent payments due to the amenity increase transfer \$24 billion to owners and an additional \$16 billion or \$9.6 billion, at $r=5\%$ and $r=3\%$ respectively, is transferred to the local and state governments. 
 
 %**Additionally**, quantification of the additional marginal benefits experienced by renter-owners due to the income effects requires relatively little data if an existing hedonic price study estimates a coefficient for the income of the occupant that can be used as an estimate of $\lambda$.
 
