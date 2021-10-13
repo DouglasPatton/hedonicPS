@@ -132,12 +132,14 @@ The relatively rare investigations of pecuniary externalities in environmental e
 \subsection{Environmental Justice} 
 \cite{mohai09} broadly review the history of Environmental Justice, including both academic attention and societal attention to the topic. Much of the focus is on the intersection of race, poverty, and toxic waste disposal. Several of the sources they review illustrate a growing awareness of pollution and a consequent push by more affluent, whiter populations to maintain their own local environmental quality.  \cite{aaronson2021} discuss redlining and the consequent lack of access to credit and disinvestment in black neighborhoods that began in the 1930's and which continue to negatively affect a variety of measures of well-being for occupants of those neighborhoods. \cite{gervais2002} found that favorable tax treatment of homeowners encourages them to over consume housing at the expense of the stock of rental housing. This evidence suggests that favorable treatment of homeowners relative to landlords in the tax code may compound the negative effects of low home ownership rates.
 
-In the context of applying the hedonic price method to residential real estate, environmental justice concerns and the search for causal connections face many challenges due to the numerous connections and feedback effects, as exemplified by the pyramid of environmental gentrification (\cite{banzhafJustice19}). \cite{banzhafJustice19} provide an overview of environmental justice in a spatial context that focuses on the use of hedonic price modeling for revealing preferences and disentangling the mechanisms that expose lower income households to higher levels of pollution. The same authors also recognize that For example, improved environmental quality can lead to gentrification, displacing lower income households that tend to rent rather than own their homes. 
+In the context of applying the hedonic price method to residential real estate, environmental justice concerns and the search for causal connections face many challenges due to the numerous connections and feedback effects, as exemplified by the pyramid of environmental gentrification (\cite{banzhafJustice19}). \cite{banzhafJustice19} provide an overview of environmental justice in a spatial context that focuses on the use of hedonic price modeling for revealing preferences and disentangling the mechanisms that expose lower income households to higher levels of pollution. The same authors also recognize that improved environmental quality can lead to gentrification, displacing lower income households that tend to rent rather than own their homes. 
 
-Environmental justice concerns discussed in the recent executive order 14008 of Jan 27, 2021 discusses communities as the target of restorative justice, suggesting that concerns about environmental gentrification should be reflected in policy design. \cite{curran12} describe a "just green enough" approach to enhancements in environmental quality that lead to reduced environmental gentrification by targeting enhancements at current residential and industrial occupants rather than new developments that tend to be "parks, cafes, and a riverwalk". \cite{wolch14} advocate for increased adoption of "just green enough" approaches to public enhancements of environmental quality after reviewing the literature on environmental gentrification in the US and China and concluding that displacement of working-class communities is a broadly relevant, ongoing concern. 
+Increased public attention to environmental justice is evidenced by the recent executive order 14008 of Jan 27, 2021. The order focuses on communities as the target of restorative justice, suggesting that concerns about environmental gentrification should be reflected in policy design. \cite{curran12} describe a "just green enough" approach to enhancements in environmental quality that lead to reduced environmental gentrification by targeting enhancements at current residential and industrial occupants rather than new developments that tend to be "parks, cafes, and a riverwalk". \cite{wolch14} advocate for increased adoption of "just green enough" approaches to public enhancements of environmental quality after reviewing the literature on environmental gentrification in the US and China and concluding that displacement of working-class communities is a broadly relevant, ongoing concern. 
 
-\subsection{Property Taxes}20
-The taxation of residential property by 
+\subsection{Property Taxes}
+The economic literature on property taxes has focused considerable attention on the question of tax incidence. 
+Property taxes paid by the owners of residential properties to local municipalities provide the bulk of revenue to local governments (\cite{zodrow01}). For homeowners, these taxes have described as the most salient and among the most disliked (\cite{cabralhoxby}). \cite{tiebout56} provides an early and often cited theoretical sorting model connecting property tax rates and public benefits associated with diverse municipalities and diverse homeowners. A variety of theoretical justifications exist for the property tax and for inferring the appropriate ad valorem rate. 
+\cite{livy18} used data from school districts with multiple tax rates to identify a negative effect of increased property taxes on home value.
 
 
 
@@ -151,7 +153,9 @@ In this section, we develop a dynamic model of a typical profit maximizing firm 
 Our approach follows the standard hedonic approach (e.g., \cite{rosen74}) to consumer decision making, but rather than being motivated by the price or user cost of homeownership, the representative consumer or household in our model decides where to rent. We assume that when deciding where to live each time period, a household is maximizing a utility function constrained by their budget and conditional on prices and income. Competing with similar demanders of housing over a set of houses with continuously variable attributes leads to an equilibrium market outcome where each household's marginal willingness to pay for an attribute is equal to the implicit rental price of that housing attribute. 
 
 At the start of each time period, $t$, the firm purchases a house for $P_t$ which is borrowed at interest rate $r$. After purchasing the house, the firm rents out the unit of housing to a household for $R_t$ and pays costs $C_t$. Later, at $t+1$, the firm sells the house for $P_{t+1}$ and repays the loan plus interest, $(1 + r)P_t$.  The present value of the firm’s profit for a single time period will be,
-\begin{equation}4720
+\begin{equation}
+\pi_t = (R_t-C_t)+\left(\frac{P_{t+1}}{1+r}-\frac{P_t(1+r)}{1+r}\right).\label{pi1}
+\end{equation}
 
 Where the first term is the net revenue from rent and costs for the time period and the second term
 represents the present value (i.e., at the start of the time period, $t$) of house price returns.
@@ -390,7 +394,7 @@ Similarly, we can compute the necessary adjustment for owner-occupied housing wh
 Which illustrates that for renter-owners, the existence of property taxes and income effects further divides implicit price from net marginal benefits.
 
 \subsection{A Corrective Tax}
-While pecuniary externalities are not an inefficiency that merits correction on the grounds of economic efficiency, political and ethical perspectives may call for such a correction. For example, a public expenditure that enhances air quality is likely designed to benefit the households in a region, regardless of whether or not they own a house. We are interested in identifying a property tax rate that can be designed to exactly offset the pecuniary externality that transfers a portion of the benefits of the amenity change from renter to owner.
+While pecuniary externalities are not an inefficiency that merits correction on the grounds of economic efficiency, political and ethical perspectives may call for such a correction. For example, a public expenditure that enhances air quality is likely designed to benefit the households in a region, regardless of whether or not they own a house. But as shown above, homeowners can charge for access to the clean air with the increased rents that future tenants are willing to pay. Consequently, we are interested in identifying a property tax rate that can be designed to exactly offset the pecuniary externality that transfers a portion of the benefits of the amenity change from renter to owner.
 
 Consider an increase in amenities that causes a change in welfare, as described in \ref{deltaW2}. Next, let $T_t$ for $t>0$ be a tax on the home owner, and let $S_t$ for $t>0$, be an equivalent subsidy paid to the renter. We can incorporate these into the welfare measure in \ref{deltaW2},
 \begin{eqnarray*}
@@ -537,6 +541,7 @@ Statistic",''
 \textit{Review of Economics and statistics}, 85(3), 693--708.
 \endbibitem
 
+cabralhoxby
 
 \bibitem[\protect\citeauthoryear{Chay and Greenstone}{2005}]{chaygreenstone05}
 \textsc{Chay, K.C. and Greenstone, M.} (2005):
@@ -613,9 +618,15 @@ Washington DC, U.S.A.: Routledge
 \textit{International Economic Review}, 55(4), 1227--1250.
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Livy}{2018}]{livy18}
+\textsc{Livy, M.R.} (2018):
+``Intra-school district capitalization of property tax rates,''
+\textit{Journal of Housing Economics}, 41, 227--236.
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Mohai, Pellow and Timmons Roberts}{2009}]{mohai09}
 \textsc{Mohai, P., Pellow, D., and Timmons Roberts, J.} (2009):
-``Environmental Justice.,''
+``Environmental Justice,''
 \textit{Annual Review of Environment and Resources}, 34, 405--430.
 \endbibitem
 
@@ -702,6 +713,15 @@ Washington DC, U.S.A.: Routledge
 ``On the Inclusion of Indirect Land Use in Biofuel,''
 \textit{University of Illinois Legal Review}, 2011(2), 413--434.
 \endbibitem
+
+\bibitem[\protect\citeauthoryear{Zodrow}{2001}]{zodrow2001}
+\textsc{Zodrow, G.R.} (2001):
+``The Property Tax as a Capital Tax: A Room with Three Views,''
+\textit{University of Illinois Legal Review}, 2001(1), 139--156.
+\endbibitem
+
+Zodrow, George R. "The property tax as a capital tax: A room with three views." National Tax Journal 54, no. 1 (2001): 139-156.
+zodrow2001
 
 %example references
 %
