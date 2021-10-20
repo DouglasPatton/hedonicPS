@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  14 OCT 2021 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  20 OCT 2021 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,7 +438,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package hyperref Warning: Ignoring empty anchor on input line 75.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 89.
+Package hyperref Warning: Ignoring empty anchor on input line 91.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -451,11 +451,11 @@ Non-PDF special ignored!
 ]
 
 LaTeX Font Warning: Font shape `T1/ptm/m/uc' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 102.
+(Font)              using `T1/ptm/m/n' instead on input line 104.
 
 
 LaTeX Font Warning: Font shape `T1/ptm/m/up' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 102.
+(Font)              using `T1/ptm/m/n' instead on input line 104.
 
 [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -469,11 +469,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-
-Package natbib Warning: Citation `tiebout56' on page 8 undefined on input line 
-140.
-
-
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
  [8]
@@ -484,97 +479,82 @@ Underfull \vbox (badness 3375) has occurred while \output is active []
 (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \begin{eqnarray}
+l.254 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \begin{eqnarray}
+l.254 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \begin{eqnarray}
+l.254 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \begin{eqnarray}
+l.254 \begin{eqnarray}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \begin{equation}
+l.260 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \begin{equation}
+l.260 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \begin{equation}
+l.260 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.258 \begin{equation}
+l.260 \begin{equation}
                        [14] [15] [16]
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
  [17]
-[18] [19]
-Underfull \vbox (badness 4569) has occurred while \output is active []
-
- [20]
+[18] [19] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-(./DPHedonicTheory.brf)
+[24] (./DPHedonicTheory.brf)
 \tf@brf=\write4
 \openout4 = `DPHedonicTheory.brf'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
- [25]
-[26]
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 787.
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 787.
+ [25] [26] [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 816.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 816.
  (./DPHedonicTheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 787.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 787.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 816.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 816.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
-(rerunfilecheck)             Checksum: 983456F91F35DB667AE6EAC9585B5106;3968.
+(rerunfilecheck)             Checksum: C7AF61547E9148257121AC3C02DF590C;4259.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8939 strings out of 483183
- 130793 string characters out of 5966292
- 397563 words of memory out of 5000000
- 23682 multiletter control sequences out of 15000+600000
- 575943 words of font info for 87 fonts, out of 8000000 for 9000
+ 8958 strings out of 483183
+ 131101 string characters out of 5966292
+ 397650 words of memory out of 5000000
+ 23699 multiletter control sequences out of 15000+600000
+ 573140 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,11n,38p,1527b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,38p,1527b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -587,13 +567,12 @@ cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on DPHedonicTheory.pdf (27 pages, 230817 bytes).
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on DPHedonicTheory.pdf (28 pages, 226302 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 106 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
