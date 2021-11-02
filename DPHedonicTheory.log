@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  1 NOV 2021 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  2 NOV 2021 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,7 +440,10 @@ Package hyperref Warning: Ignoring empty anchor on input line 75.
 
 Package hyperref Warning: Ignoring empty anchor on input line 91.
 
-[1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -465,13 +468,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
  [6]
-Underfull \vbox (badness 4132) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 3271) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10] [11] [12] [13]pdfTeX warning (ext4): destination with the same identifier 
@@ -514,11 +517,14 @@ er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.259 \begin{equation}
-                       [14]
-Underfull \vbox (badness 7168) has occurred while \output is active []
+                       [14] [15] [16] [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-[16] [17] [18] [19] [20]
+ [18]
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+ [19]
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
@@ -529,38 +535,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-(./DPHedonicTheory.brf)
+[25] (./DPHedonicTheory.brf)
 \tf@brf=\write4
 \openout4 = `DPHedonicTheory.brf'.
 
- [25]
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
- [26]
-[27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
+ [26] [27] [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 816.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 816.
  (./DPHedonicTheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 815.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 816.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 816.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
-(rerunfilecheck)             Checksum: B228867A39152BDBE58FCA47D78240D1;4216.
+(rerunfilecheck)             Checksum: 19B4A959951D857EE38E04B9EFB521A3;4318.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8958 strings out of 483183
- 131101 string characters out of 5966292
- 398659 words of memory out of 5000000
+ 8959 strings out of 483183
+ 131108 string characters out of 5966292
+ 397658 words of memory out of 5000000
  23699 multiletter control sequences out of 15000+600000
  573140 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,11n,38p,1687b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,38p,1541b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -575,10 +577,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 227564 bytes).
+Output written on DPHedonicTheory.pdf (29 pages, 228605 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 573 compressed objects within 6 object streams
+ 107 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
