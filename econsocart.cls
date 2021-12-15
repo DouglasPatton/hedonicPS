@@ -155,7 +155,7 @@
     \global\ecta@layouttrue
     \def\@issn{0012-9682}%
     \def\@eissn{1468-0262}%
-    \def\@journal{Econometrica}%
+    \def\@journal{The Review of Economics and Statistics}%
     \def\journal@url{https://www.econometricsociety.org/}%
     \def\sup@journal{Econometrica Supplementary Material}%
     \def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
