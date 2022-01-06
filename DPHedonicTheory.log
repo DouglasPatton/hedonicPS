@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  29 DEC 2021 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  29 DEC 2021 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,10 +440,7 @@ Package hyperref Warning: Ignoring empty anchor on input line 75.
 
 Package hyperref Warning: Ignoring empty anchor on input line 91.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+[1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -468,20 +465,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3375) has occurred while \output is active []
 
  [9]
-[10] [11] [12] [13pdfTeX warning (ext4): destination with the same identifier (
-name{equation.0.3.8}) has been already used, duplicate ignored
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11] [12] [13pdfTeX warning (ext4): destination with the same identifier (name{
+equation.0.3.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -537,7 +535,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
-(rerunfilecheck)             Checksum: C6F97D3401AB38E8740BF11C87B68610;4318.
+(rerunfilecheck)             Checksum: A4866060855DE9AEDE23DB32571908B6;4318.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -565,7 +563,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 225038 bytes).
+Output written on DPHedonicTheory.pdf (28 pages, 224670 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  570 compressed objects within 6 object streams
