@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  6 JAN 2022 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  6 JAN 2022 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -60,7 +60,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 43
-1.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -173,7 +173,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip53
 \dth@everypar=\toks26
 )
-LaTeX Info: Redefining \qed on input line 714.
+LaTeX Info: Redefining \qed on input line 719.
 
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -532,14 +532,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 814.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
+Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
+(rerunfilecheck)             Checksum: CC90E7863E2E4706BF55F2E248BCA5AA;4318.
 
-
-Package rerunfilecheck Warning: File `DPHedonicTheory.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `DPHedonicTheory.brf':
-(rerunfilecheck)             Before: A4866060855DE9AEDE23DB32571908B6;4318
-(rerunfilecheck)             After:  CC90E7863E2E4706BF55F2E248BCA5AA;4318.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -566,7 +561,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 224802 bytes).
+Output written on DPHedonicTheory.pdf (28 pages, 224805 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  570 compressed objects within 6 object streams
