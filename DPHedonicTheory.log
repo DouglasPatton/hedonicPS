@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  29 DEC 2021 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  6 JAN 2022 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,13 +504,15 @@ er (name{equation.0.3.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.255 \begin{equation}
-                       [14] [15] [16] [17] [18] [19] [20]
+                       [14] [15] [16] [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+[19] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
@@ -521,11 +523,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@brf=\write4
 \openout4 = `DPHedonicTheory.brf'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
-[26] [27]
+ [25] [26] [27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 814.
  [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 814.
@@ -534,9 +532,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 814.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
-Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
-(rerunfilecheck)             Checksum: A4866060855DE9AEDE23DB32571908B6;4318.
 
+
+Package rerunfilecheck Warning: File `DPHedonicTheory.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `DPHedonicTheory.brf':
+(rerunfilecheck)             Before: A4866060855DE9AEDE23DB32571908B6;4318
+(rerunfilecheck)             After:  CC90E7863E2E4706BF55F2E248BCA5AA;4318.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -544,11 +547,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  8957 strings out of 483183
  131096 string characters out of 5966292
- 398634 words of memory out of 5000000
+ 397634 words of memory out of 5000000
  23698 multiletter control sequences out of 15000+600000
  573140 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,11n,38p,1472b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,38p,1472b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -563,7 +566,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 224670 bytes).
+Output written on DPHedonicTheory.pdf (28 pages, 224802 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  570 compressed objects within 6 object streams
