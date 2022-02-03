@@ -19,11 +19,6 @@
 %% software under the terms of the LaTeX Project Public License
 %% (LPPL), version 1.3c or any later version.
 %%
-
-
-%% This file has been modified around line 154 to define 'ecta' as RESTAT rather than econometrica
-
-
 \NeedsTeXFormat{LaTeX2e}[2000/06/01]
 \ProvidesClass{econsocart}[2020/12/03 v1.2.1, The Econometric Society Journals]
 % 
@@ -160,8 +155,8 @@
     \global\ecta@layouttrue
     \def\@issn{0012-9682}%
     \def\@eissn{1468-0262}%
-    \def\@journal{The Review of Economics and Statistics}%
-    \def\journal@url{https://www.econometricsociety.org/}%
+    \def\@journal{Working Paper}%
+    \def\journal@url{https://www.github.com/DouglasPatton/}%
     \def\sup@journal{Econometrica Supplementary Material}%
     \def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
     \def\copyright@owner{The Econometric Society}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  6 JAN 2022 10:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  3 FEB 2022 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -60,7 +60,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 43
-6.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -173,7 +173,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip53
 \dth@everypar=\toks26
 )
-LaTeX Info: Redefining \qed on input line 719.
+LaTeX Info: Redefining \qed on input line 714.
 
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -524,12 +524,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout4 = `DPHedonicTheory.brf'.
 
  [25] [26] [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 814.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
  [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 814.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
  (./DPHedonicTheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 814.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 815.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
@@ -542,7 +542,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  8957 strings out of 483183
  131096 string characters out of 5966292
- 397634 words of memory out of 5000000
+ 397611 words of memory out of 5000000
  23698 multiletter control sequences out of 15000+600000
  573140 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -561,7 +561,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 224805 bytes).
+Output written on DPHedonicTheory.pdf (28 pages, 224793 bytes).
 PDF statistics:
  620 PDF objects out of 1000 (max. 8388607)
  570 compressed objects within 6 object streams
