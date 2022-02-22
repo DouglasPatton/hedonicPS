@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  22 FEB 2022 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  22 FEB 2022 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -547,12 +547,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
 [26] [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 814.
  [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 814.
  (./DPHedonicTheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 815.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 814.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 814.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
