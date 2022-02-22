@@ -155,10 +155,10 @@
     \global\ecta@layouttrue
     \def\@issn{0012-9682}%
     \def\@eissn{1468-0262}%
-    \def\@journal{Working Paper}%
-    \def\journal@url{https://www.github.com/DouglasPatton/}%
-    \def\sup@journal{Econometrica Supplementary Material}%
-    \def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
+    \def\@journal{The Review of Economics and Statistics}%
+    \def\journal@url{https://direct.mit.edu/rest}%
+    %\def\sup@journal{Econometrica Supplementary Material}%
+    %\def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
     \def\copyright@owner{The Econometric Society}%
     \let\copyright@default\copyright@owner
     \def\@jid{ECTA}%
@@ -171,8 +171,8 @@
 \def\@eissn{0000-0000}
 \def\@journal{Unknown Journal}
 \def\sup@journal{Supplementary Material}
-\def\journal@url{https://www.econometricsociety.org/}
-\def\copyright@owner{The Econometric Society}
+\def\journal@url{https://direct.mit.edu/rest}
+\def\copyright@owner{MIT Press}
 \def\@jid{UJ}
 \def\@shortjid{uj}
 %
