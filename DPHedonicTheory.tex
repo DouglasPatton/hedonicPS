@@ -229,7 +229,7 @@ Now I calculate the present value of the change in total welfare due to the trea
 \end{eqnarray}
 This is an intriguing result that helps refine how one might compute the distribution of benefits from public projects that enhance amenities. The house price return is an unexpected profit enjoyed by the owner; this benefit to the firm is immediate and has a clear value, while the sign on the individual differences in the sum of future consumer benefits is indeterminate. The result in \ref{deltaW2} result may seem inconsistent with the usual measure of welfare change, such as in \cite{freeman14} and \cite{banzhaf20}, but next I consider the pattern of changing rent that accompanies the change in price to derive a more familiar measure. 
 
-While $\Delta\pi_t=0$ for $t>0$, it is still helpful to consider the equation for the change in profits because it can help us understand how rents will change,
+While $\Delta\pi_t=0$ for $t>0$, it is still helpful to consider the equation for the change in profits to see how rents will change,
 \begin{eqnarray}
 	\Delta \pi_t &=& \Delta R_t-\Delta C_t-\Delta P_t\left(\frac{r}{1+r}\right)=0 \text{ for } t>0\nonumber\\
 	\Delta R_t &=& \Delta C_t+\Delta P_t \left(\frac{r}{1+r}\right)  \text{ for } t>0\label{deltarent}
@@ -251,7 +251,7 @@ In the usual approach that is static and does not distinguish between owner and 
 &=&\sum_{t>0} \frac{\partial R_t}{\partial q_t}(1+r)^{-t}\nonumber\\
 &=&\sum_{t>0} \frac{\partial C_t}{\partial q_t}(1+r)^{-t}+\frac{r}{1+r}\sum_{t>0} \frac{\partial P_t}{\partial q_t}(1+r)^{-t}\nonumber
 \end{eqnarray}
-Which can be rearranged to help us understand the partial derivative of the price function,
+Which can be rearranged and solved for the partial derivative of the price function,
 \begin{equation}
 	\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}=\frac{\partial \mathit{WTP}_{\mathrm{PV}}}{\partial q_{t>0}}-\frac{\partial C_{\mathrm{PV}}}{\partial q_{t>0}} \label{marginalPrice}.
 \end{equation}
@@ -326,7 +326,7 @@ In the narrow case of housing markets where few renters own, the marginal willin
 %\begin{eqnarray}
 %\frac{\partial R_t}{\partial \bar{y}_t}=\alpha*\frac{\partial \mathit{WTP}_t}{\partial y_t}=\alpha*\lambda
 %\end{eqnarray}
-%Next, we assume a constant share of households are renter-owners, $\gamma$, allowing us to write,
+%Next, we assume a constant share of households are renter-owners, $\gamma$, allowing me to write,
 %\begin{equation}
 %	\frac{\partial\bar{y}_t}{\partial q_t}=\gamma*r*\frac{\partial P_{1_{\mathrm{PV}}}} {\partial q_{t>0}}
 %\end{equation}
@@ -344,11 +344,11 @@ It can be useful to separate taxes out as a component of costs to consider how c
 \begin{equation*}
 	\pi^T_t = (R^T_t-C^T_t)+\left(\frac{P^T_{t+1}}{1+r}-\frac{P^T_t(1+r+g)}{1+r}\right).\label{pi1T}
 \end{equation*}
-The tax is imposed at the end of $t=0$. Markets subsequently adjust to a new equilibrium with competition returning profits to zero and allowing us to express equilibrium rents as a function of the new tax,
+The tax is imposed at the end of $t=0$. Markets subsequently adjust to a new equilibrium with competition returning profits to zero and allowing me to express equilibrium rents as a function of the new tax,
 \begin{equation*}
 	R^T_t=C^T_t-\left(\frac{P^T_{t+1}}{1+r}-\frac{P^T_t(1+r+g)}{1+r}\right) \text{ for }t>0
 \end{equation*}
-Then efficient use of information and competition cause prices in the next period to equal prices in this period, allowing us to simplify the rental equation,
+Then efficient use of information and competition cause prices in the next period to equal prices in this period, allowing for simplification of the rental equation,
 \begin{equation*}
 R^T_t=C^T_t-\frac{P^T_{t}(g+r)}{1+r}\text{ for }t>0.
 \end{equation*}
@@ -440,7 +440,7 @@ Using the result in \ref{marginalPriceT}, I also correct willingness to pay esti
 
 
 \section{Discussion}
-Throughout this paper I have mostly ignored the econometric challenges associated with quantifying changes in WTP that dominate the literature. It seems likely to us that the way future willingness to pay, future rents, future costs, etc. are capitalized into today's prices increase the challenge associated with identifying an individual's demand. Efficient markets form expectations about future values, so welfare estimates derived from the asset market provides something of a market consensus about how future conditions and future preferences of future occupants will translate into the relevant measures of future supply and demand in rental markets. Ultimately, I expect that the enhanced clarity that comes from separating the renter from the owner will  determine the appropriate techniques for fully quantifying the distribution of welfare changes.
+Throughout this paper I have mostly ignored the econometric challenges associated with quantifying changes in WTP that dominate the literature. It seems likely that the manner in which future willingness to pay, future rents, future costs, etc. are capitalized into today's prices increase the challenge associated with identifying an individual's demand for housing. Efficient markets form expectations about future values, so welfare estimates derived from the asset market provides something of a market consensus about how future conditions and future preferences of future occupants will translate into the relevant measures of future supply and demand in rental markets. Ultimately, I expect that the enhanced clarity that comes from separating the renter from the owner will  determine the appropriate techniques for fully quantifying the distribution of welfare changes.
 
 The scope of a property owner's legal rights is an important component of evaluating the feasibility of applying a corrective tax like I describe above. Societal and Political views on increased taxes suggest there would be substantial opposition to new property taxes. However, people are accustomed to paying for government provided services with property taxes in a pattern that \cite{tiebout56} famously recognized as a form of economically efficient market activity. As changes in populations and ecosystems lead to increased provisioning and management of ecosystem services by local, state, and federal governments, it is natural to reconsider a property owner's rights to freely enjoy profits derived from public goods.
 
