@@ -155,8 +155,8 @@
     \global\ecta@layouttrue
     \def\@issn{0012-9682}%
     \def\@eissn{1468-0262}%
-    \def\@journal{The Quarterly Journal of Economics}%
-    \def\journal@url{https://academic.oup.com/qje}%
+    \def\@journal{The Review of Economics and Statistics}%
+    \def\journal@url{https://direct.mit.edu/rest}%
     %\def\sup@journal{Econometrica Supplementary Material}%
     %\def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
     \def\copyright@owner{The Econometric Society}%
@@ -171,8 +171,8 @@
 \def\@eissn{0000-0000}
 \def\@journal{Unknown Journal}
 \def\sup@journal{Supplementary Material}
-\def\journal@url{https://academic.oup.com/qje}
-\def\copyright@owner{Oxford University Press}
+\def\journal@url{https://direct.mit.edu/rest}
+\def\copyright@owner{MIT Press}
 \def\@jid{UJ}
 \def\@shortjid{uj}
 %
