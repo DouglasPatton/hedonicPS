@@ -155,8 +155,8 @@
     \global\ecta@layouttrue
     \def\@issn{0012-9682}%
     \def\@eissn{1468-0262}%
-    \def\@journal{The Review of Economics and Statistics}%
-    \def\journal@url{https://direct.mit.edu/rest}%
+    \def\@journal{Ecological Economics}%
+    \def\journal@url{https://www.sciencedirect.com/journal/ecological-economics}%
     %\def\sup@journal{Econometrica Supplementary Material}%
     %\def\sup@journal@url{https://www.econometricsociety.org/suppmatlist.asp}%
     \def\copyright@owner{The Econometric Society}%

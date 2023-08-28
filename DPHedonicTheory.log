@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  20 APR 2022 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.15)  30 DEC 2022 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,14 +193,12 @@ LaTeX Info: Redefining \cite on input line 694.
 \@tempcntc=\count198
 \@tempcntd=\count199
 \@tempcnte=\count266
-\numberlines@box=\box47
-\numberlines@box@skip=\skip56
-\fm@box=\box48
+\fm@box=\box47
 \fm@size=\dimen147
 \t@xtheight=\dimen148
 \c@econsocartaddressref=\count267
-\abstract@box=\box49
-\keyword@box=\box50
+\abstract@box=\box48
+\keyword@box=\box49
 \pre@kwd@depth=\dimen149
 \authors@list=\toks27
 \keywords@list=\toks28
@@ -263,9 +261,8 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count270
 \pdfmajorversion=\count271
-Package hyperref Info: Option `draft' set `true' on input line 4421.
+Package hyperref Info: Option `final' set `true' on input line 4421.
 Package hyperref Info: Option `setpagesize' set `false' on input line 4421.
-Package hyperref Info: Option `draft' set `false' on input line 4421.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
@@ -327,20 +324,15 @@ Package hyperref Info: Driver (autodetected): hpdftex.
 File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 \Fld@listcount=\count277
 \c@bookmark@seq@number=\count278
-\Hy@SectionHShift=\skip57
+\Hy@SectionHShift=\skip56
 )
 \c@axiom=\count279
 \c@theorem=\count280
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 49
-.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count281
-\l__pdf_internal_box=\box51
+\l__pdf_internal_box=\box50
 )
 
 LaTeX Warning: Unused global option(s):
@@ -370,7 +362,7 @@ LaTeX Font Info:    ... okay on input line 49.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
 \scratchdimen=\dimen154
-\scratchbox=\box52
+\scratchbox=\box51
 \nofMPsegments=\count283
 \nofMParguments=\count284
 \everyMPshowfont=\toks29
@@ -389,7 +381,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package backref Info: ** backref set up for natbib ** on input line 49.
-\AtBeginShipoutBox=\box53
+\AtBeginShipoutBox=\box52
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
@@ -421,7 +413,6 @@ LaTeX Info: Redefining \nameref on input line 49.
 \openout3 = `DPHedonicTheory.out'.
 
 \@address@1=\toks31
-LaTeX Font Info:    Calculating math sizes for size <9.6> on input line 75.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
 
 
@@ -442,111 +433,38 @@ Package hyperref Warning: Ignoring empty anchor on input line 92.
 
 [1
 Non-PDF special ignored!
-<special> papersize=614.295pt,794.96999pt
+<special> papersize=487.8225pt,704.63249pt
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 LaTeX Font Warning: Font shape `T1/ptm/m/uc' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 105.
+(Font)              using `T1/ptm/m/n' instead on input line 118.
 
 
 LaTeX Font Warning: Font shape `T1/ptm/m/up' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 105.
+(Font)              using `T1/ptm/m/n' instead on input line 118.
 
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[2] [3] [4] [5] [6] [7] [8pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.0.3.8}) has been already used, duplicate ignored
 
- [3]
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.0.3.8}) has been already used, duplicate ignored
 
- [5]
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \vbox (badness 4132) has occurred while \output is active []
-
- [8]
-Underfull \vbox (badness 3375) has occurred while \output is active []
-
- [9]
-[10] [11] [12]pdfTeX warning (ext4): destination with the same identifier (name
-{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.250 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.250 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.250 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.250 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.3.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \begin{equation}
-                       [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-[15] [16] [17] [18]
-Underfull \vbox (badness 2213) has occurred while \output is active []
-
- [19]
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-(./DPHedonicTheory.brf)
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.271 
+      ] [9] [10] [11] [12] [13] [14] [15] (./DPHedonicTheory.brf)
 \tf@brf=\write4
 \openout4 = `DPHedonicTheory.brf'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
-[26] [27]
+ [16] [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
- [28]
+
+[18]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
  (./DPHedonicTheory.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 815.
@@ -554,38 +472,37 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
 Package rerunfilecheck Info: File `DPHedonicTheory.out' has not changed.
 (rerunfilecheck)             Checksum: BED185D02D50D74BD39CC6F9628AFE46;1067.
 Package rerunfilecheck Info: File `DPHedonicTheory.brf' has not changed.
-(rerunfilecheck)             Checksum: A4866060855DE9AEDE23DB32571908B6;4318.
+(rerunfilecheck)             Checksum: D96588224DDE8998066FAE4AD17F8C7E;4315.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8956 strings out of 483183
- 131081 string characters out of 5966292
- 398561 words of memory out of 5000000
- 23697 multiletter control sequences out of 15000+600000
- 573140 words of font info for 85 fonts, out of 8000000 for 9000
+ 8908 strings out of 483183
+ 130490 string characters out of 5966292
+ 398120 words of memory out of 5000000
+ 23664 multiletter control sequences out of 15000+600000
+ 569914 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,11n,38p,1467b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,38p,1467b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on DPHedonicTheory.pdf (28 pages, 224400 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on DPHedonicTheory.pdf (18 pages, 205190 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
+ 96 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
